@@ -45,7 +45,7 @@ body {
   display: block;
   padding: .5rem 1rem;
   text-decoration: none;
-  font-size: 12vw;
+  font-size: 15vw;
 }
 
 .header .logo {
@@ -64,7 +64,6 @@ body {
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: left;
   padding: 28px 20px;
   position: relative;
@@ -138,7 +137,7 @@ body {
     float: left;
   }
   .header li a {
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 20px 30px;
   }
   .header .menu {
@@ -153,5 +152,10 @@ body {
   .header .logo {
     float: left;
   }
+}
+
+.header .max-width-header {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

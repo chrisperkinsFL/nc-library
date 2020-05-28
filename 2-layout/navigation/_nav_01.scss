@@ -11,7 +11,7 @@
       display: block;
       padding: .5rem 1rem;
       text-decoration: none;
-      font-size: 12vw;
+      font-size: 15vw;
     }
     .logo{
       display: block;
@@ -26,7 +26,6 @@
     }
     .menu-icon{
       cursor: pointer;
-      display: inline-block;
       float: left;
       padding: 28px 20px;
       position: relative;
@@ -79,12 +78,12 @@
         }
     }  
   
-  @media (min-width: 768px){
+  @media (min-width: $tablet){
       height: auto;
         li{
           float: left;
             a{
-              font-size: 1rem;
+              font-size: 1.25rem;
               padding: 20px 30px;
             }
         }
@@ -100,6 +99,13 @@
         .logo{
           float: left;
         }
-    }  
+    }
+
+    //this is only used for the max width version of the nav.  The variable is being pulled from 1-base _media_queries.scss
+    .max-width-header{
+      max-width: $oversized-desktop;
+      margin: 0 auto;
+    }
 }
+
 
