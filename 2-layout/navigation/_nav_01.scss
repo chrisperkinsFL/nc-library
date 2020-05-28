@@ -1,0 +1,105 @@
+.header{
+  background: $primary-color-1;
+  width: 100%;
+  position: fixed;
+    ul{
+      list-style: none;
+      overflow: hidden;
+    }
+    li a{
+      color: $primary-color-3;
+      display: block;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      font-size: 12vw;
+    }
+    .logo{
+      display: block;
+      float: right;
+      padding: 10px 20px;
+    }
+    .menu{
+      clear: both;
+      max-height: 0;
+      height: 100vh;
+      transition: max-height .2s ease-out;
+    }
+    .menu-icon{
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+
+      .navicon{
+        background: $primary-color-3;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+          &:before, &:after{
+          background: $primary-color-3;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%;
+        }
+      }
+      :before{
+        top: 5px;
+      }
+      :after{
+        top: -5px;
+      }
+    }
+
+    .menu-btn{
+      display: none;
+        &:checked ~ .menu{
+          max-height: 100%;
+        }
+        &:checked ~ .menu-icon{
+          .navicon{
+            background: transparent;
+              &:before{
+                transform: rotate(-45deg);
+              }
+              &:after{
+                transform: rotate(45deg);
+              }
+            }
+          &:not(.steps) .navicon:before,
+          &:not(.steps) .navicon:after{
+              top: 0;
+          }
+        }
+    }  
+  
+  @media (min-width: 768px){
+      height: auto;
+        li{
+          float: left;
+            a{
+              font-size: 1rem;
+              padding: 20px 30px;
+            }
+        }
+        .menu{
+          clear: none;
+          float: right;
+          max-height: none;
+          height: auto;
+        }
+        .menu-icon{
+          display: none;
+        }
+        .logo{
+          float: left;
+        }
+    }  
+}
+
