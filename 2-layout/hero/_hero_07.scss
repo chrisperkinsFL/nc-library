@@ -6,11 +6,11 @@ section.hero-7{
       .hero-content-container{
         padding: 1rem;
         min-height: 400px;
-        height: 80%;
+        height: 100%;
         justify-content: center;
       }
       .video-blurb{
-        height: auto;
+        padding: 1rem;
       }
       h1, .tagline, .sub-heading{
         padding: 1rem;
@@ -28,7 +28,7 @@ section.hero-7{
         background: $primary-color-1;
       }
       @media (min-width: $tablet){
-        height: 500px;
+        height: 800px;
         flex-direction: column;
         flex-wrap: wrap;
         .flex-2-12{ order:2; }
