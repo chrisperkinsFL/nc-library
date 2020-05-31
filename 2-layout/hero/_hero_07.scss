@@ -1,0 +1,39 @@
+section.hero-7{
+  .flex-2-12{ order: 3; }
+  .hero-content-wrapper{
+    max-width: 100%;
+    min-height: 100%;
+      .hero-content-container{
+        padding: 1rem;
+        min-height: 400px;
+        height: 80%;
+        justify-content: center;
+      }
+      .video-blurb{
+        height: auto;
+      }
+      h1, .tagline, .sub-heading{
+        padding: 1rem;
+      }
+      .bg-1{
+        color: $primary-color-2;
+        background: $primary-color-3;
+      }
+      .bg-2{
+        color: $primary-color-3;
+        background: $primary-color-2;
+      }
+      .bg-3{
+        color: $primary-color-3;
+        background: $primary-color-1;
+      }
+      @media (min-width: $tablet){
+        height: 500px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .flex-2-12{ order:2; }
+        .flex-5-12{ width: 50%; }
+        .div-2{ order: 3; }
+      }
+  }
+}
