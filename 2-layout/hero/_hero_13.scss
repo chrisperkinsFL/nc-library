@@ -23,15 +23,16 @@ section.hero-13{
       }
       .social-icons{
         float: left;
+        color: $primary-color-3;
+        font-size: 1.5rem;
       }
-      form{
-        margin: 4rem 0 1rem;
+      .follow-us-text{
+        display: inline-block;
+        font-size: 1rem;
+        margin: .5rem 0;
       }
-      input{
-        border: 0;
-        padding: 1rem;
-        margin: .25rem 0;
-        width: 300px;
+      .fab{
+        margin: .25rem;
       }
       @media (min-width: $tablet){
         height: 100vh; 
@@ -47,10 +48,16 @@ section.hero-13{
         .social-icons{
           display: inline;
           writing-mode: vertical-lr;
-          transform: rotate(-180deg);
           float: right;
           margin: 10rem 2rem;
         }
+        .follow-us-text{
+          transform: rotate(-180deg);
+          display: inline-block;
+          margin: 1rem 0 0;
+          font-size: 1rem;
+          display: none;
+        }     
         form{
           position: absolute;
           bottom: 0;

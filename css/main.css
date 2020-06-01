@@ -190,6 +190,13 @@ span {
   padding: 1rem 3rem;
 }
 
+input {
+  border: 0;
+  padding: 1rem;
+  margin: .25rem 0;
+  width: 300px;
+}
+
 .header {
   background: #EA5948;
   width: 100%;
@@ -394,8 +401,13 @@ section.hero-7 .hero-content-wrapper .video-blurb {
   padding: 1rem;
 }
 
-section.hero-7 .hero-content-wrapper h1, section.hero-7 .hero-content-wrapper .tagline, section.hero-7 .hero-content-wrapper .sub-heading {
-  padding: 1rem;
+section.hero-7 .hero-content-wrapper h1 {
+  font-size: 3rem;
+}
+
+section.hero-7 .hero-content-wrapper .sub-heading {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 section.hero-7 .hero-content-wrapper .bg-1 {
@@ -429,10 +441,10 @@ section.hero-7 .hero-content-wrapper .bg-3 {
             order: 2;
   }
   section.hero-7 .hero-content-wrapper .flex-5-12 {
-    width: 30%;
+    width: 50%;
   }
   section.hero-7 .hero-content-wrapper .div-1 {
-    width: 70%;
+    width: 50%;
   }
   section.hero-7 .hero-content-wrapper .div-2 {
     -webkit-box-ordinal-group: 4;
@@ -443,7 +455,12 @@ section.hero-7 .hero-content-wrapper .bg-3 {
             flex: 0 0 100%;
   }
   section.hero-7 .hero-content-wrapper .div-3 {
-    width: 70%;
+    width: 50%;
+  }
+  section.hero-7 .hero-content-wrapper .hero-content-container,
+  section.hero-7 .hero-content-wrapper .video-blurb {
+    margin: 0 auto;
+    max-width: 500px;
   }
 }
 
@@ -578,6 +595,12 @@ section.hero-12 .hero-content-wrapper .counter-active {
   }
 }
 
+@media (min-width: 992px) {
+  section.hero-12 .hero-content-wrapper .flex-row {
+    padding: 4rem;
+  }
+}
+
 section.hero-13 {
   background: #EA5948;
 }
@@ -610,17 +633,18 @@ section.hero-13 .hero-blurb-text {
 
 section.hero-13 .social-icons {
   float: left;
+  color: #F1F1F1;
+  font-size: 1.5rem;
 }
 
-section.hero-13 form {
-  margin: 4rem 0 1rem;
+section.hero-13 .follow-us-text {
+  display: inline-block;
+  font-size: 1rem;
+  margin: .5rem 0;
 }
 
-section.hero-13 input {
-  border: 0;
-  padding: 1rem;
-  margin: .25rem 0;
-  width: 300px;
+section.hero-13 .fab {
+  margin: .25rem;
 }
 
 @media (min-width: 768px) {
@@ -644,10 +668,16 @@ section.hero-13 input {
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
     float: right;
     margin: 10rem 2rem;
+  }
+  section.hero-13 .follow-us-text {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    display: inline-block;
+    margin: 1rem 0 0;
+    font-size: 1rem;
+    display: none;
   }
   section.hero-13 form {
     position: absolute;
@@ -753,6 +783,20 @@ section.hero-14 .video-placeholder {
 @media (min-width: 1440px) {
   section.hero-14 {
     padding: 8rem;
+  }
+}
+
+section.hero-16 {
+  background: #EA5948;
+}
+
+section.hero-16 .hero-content-wrapper h1 {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  section.hero-16 .hero-content-wrapper {
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

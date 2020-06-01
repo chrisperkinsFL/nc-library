@@ -37,6 +37,11 @@ section.hero-12{
           display: block;
           float: right;
         }
+      }
+      @media (min-width: $desktop){
+        .flex-row{
+          padding: 4rem;
+        }
       }      
   }
 }

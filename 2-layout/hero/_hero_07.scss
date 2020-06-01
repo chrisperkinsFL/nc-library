@@ -12,9 +12,14 @@ section.hero-7{
       .video-blurb{
         padding: 1rem;
       }
-      h1, .tagline, .sub-heading{
-        padding: 1rem;
+      h1{
+        font-size: 3rem;
       }
+      .sub-heading{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+      }
+      
       .bg-1{
         color: $primary-color-2;
         background: $primary-color-3;
@@ -32,10 +37,15 @@ section.hero-7{
         flex-direction: column;
         flex-wrap: wrap;
         .flex-2-12{ order:2; }
-        .flex-5-12{ width: 30%; }
-        .div-1{width: 70%}
+        .flex-5-12{ width: 50%; }
+        .div-1{width: 50%}
         .div-2{ order: 3; flex: 0 0 100%; }
-        .div-3{width: 70%;}
+        .div-3{width: 50%;}
+        .hero-content-container,
+        .video-blurb{
+          margin: 0 auto;
+          max-width: 500px;
+        }
       }
   }
 }
