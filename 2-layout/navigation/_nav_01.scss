@@ -15,14 +15,12 @@
     }
     .logo{
       display: block;
-      float: right;
       padding: 10px 20px;
     }
     .menu{
-      clear: both;
       max-height: 0;
       height: 100vh;
-      transition: max-height .2s ease-out;
+      /*transition: max-height .2s ease-out;*/
     }
     .menu-icon{
       cursor: pointer;
@@ -60,6 +58,7 @@
       display: none;
         &:checked ~ .menu{
           max-height: 100%;
+          clear: both;
         }
         &:checked ~ .menu-icon{
           .navicon{
@@ -81,7 +80,7 @@
   @media (min-width: $tablet){
       height: auto;
         li{
-          float: left;
+          float: right;
             a{
               font-size: 1.25rem;
               padding: 20px 30px;

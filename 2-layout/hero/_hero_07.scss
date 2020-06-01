@@ -28,12 +28,14 @@ section.hero-7{
         background: $primary-color-1;
       }
       @media (min-width: $tablet){
-        height: 800px;
+        height: 100vh;
         flex-direction: column;
         flex-wrap: wrap;
         .flex-2-12{ order:2; }
-        .flex-5-12{ width: 50%; }
-        .div-2{ order: 3; }
+        .flex-5-12{ width: 30%; }
+        .div-1{width: 70%}
+        .div-2{ order: 3; flex: 0 0 100%; }
+        .div-3{width: 70%;}
       }
   }
 }
