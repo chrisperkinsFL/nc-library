@@ -3,6 +3,12 @@ body{
   color: $primary-color-2;
 }
 
+a{
+  text-decoration: none;
+  color: $primary-color-3;
+  font-weight: bold;
+}
+
 .max-width{
   margin: 0 auto;
   max-width: 1440px;
@@ -55,4 +61,12 @@ body{
 
 span{
   display: block;
+}
+
+.filled-button{
+  display: inline-block;
+  background: $primary-color-3;
+  color: $primary-color-2;
+  text-decoration: none;
+  padding: 1rem 3rem;
 }

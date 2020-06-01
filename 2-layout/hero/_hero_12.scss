@@ -1,0 +1,42 @@
+section.hero-12{
+  background: $primary-color-1;
+  .hero-content-wrapper{
+      h1{
+        font-size: 3rem;
+      }
+      .hero-headline-wrapper{
+        align-self: flex-end;
+        text-align: right;
+      }
+      h1, span, .filled-button{
+        margin: 2rem;
+      }
+      .flex-row{
+        height: 50%;
+      }
+      .social-icons{
+        display: none;
+      }
+      .min-height{
+        min-height: 200px;
+      }
+      .counter-align{
+        align-self: flex-end;
+      }
+      .counter-active{
+        margin: 0;
+        display: inline-block;
+        font-size: 1.5rem;
+      }
+      @media (min-width: $tablet){
+        height: 100vh;
+        .hero-headline-wrapper{
+          max-width: 700px;
+        }
+        .social-icons{
+          display: block;
+          float: right;
+        }
+      }      
+  }
+}

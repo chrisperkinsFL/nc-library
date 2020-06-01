@@ -29,6 +29,12 @@ body {
   color: #333333;
 }
 
+a {
+  text-decoration: none;
+  color: #F1F1F1;
+  font-weight: bold;
+}
+
 .max-width {
   margin: 0 auto;
   max-width: 1440px;
@@ -175,6 +181,14 @@ body {
 
 span {
   display: block;
+}
+
+.filled-button {
+  display: inline-block;
+  background: #F1F1F1;
+  color: #333333;
+  text-decoration: none;
+  padding: 1rem 3rem;
 }
 
 .header {
@@ -328,6 +342,10 @@ section.hero-4 .hero-content-wrapper h1, section.hero-4 .hero-content-wrapper .t
   padding: 1rem;
 }
 
+section.hero-4 .hero-content-wrapper h1 {
+  font-size: 2rem;
+}
+
 section.hero-4 .hero-content-wrapper .bg-1 {
   color: #333333;
   background: #F1F1F1;
@@ -336,6 +354,23 @@ section.hero-4 .hero-content-wrapper .bg-1 {
 section.hero-4 .hero-content-wrapper .bg-2 {
   color: #F1F1F1;
   background: #333333;
+}
+
+@media (min-width: 768px) {
+  section.hero-4 .hero-content-wrapper {
+    height: 100vh;
+  }
+  section.hero-4 .hero-content-wrapper .flex-column {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  section.hero-4 .hero-content-wrapper h1 {
+    font-size: 3rem;
+  }
+  section.hero-4 .hero-content-wrapper .sub-heading {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
 }
 
 section.hero-7 .flex-2-12 {
@@ -480,5 +515,137 @@ section.hero-11 .hero-content-wrapper .counter-active {
   section.hero-11 .hero-content-wrapper .counter {
     position: absolute;
     bottom: 0;
+  }
+}
+
+section.hero-12 {
+  background: #EA5948;
+}
+
+section.hero-12 .hero-content-wrapper h1 {
+  font-size: 3rem;
+}
+
+section.hero-12 .hero-content-wrapper .hero-headline-wrapper {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+section.hero-12 .hero-content-wrapper h1, section.hero-12 .hero-content-wrapper span, section.hero-12 .hero-content-wrapper .filled-button {
+  margin: 2rem;
+}
+
+section.hero-12 .hero-content-wrapper .flex-row {
+  height: 50%;
+}
+
+section.hero-12 .hero-content-wrapper .social-icons {
+  display: none;
+}
+
+section.hero-12 .hero-content-wrapper .min-height {
+  min-height: 200px;
+}
+
+section.hero-12 .hero-content-wrapper .counter-align {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+section.hero-12 .hero-content-wrapper .counter-active {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section.hero-12 .hero-content-wrapper {
+    height: 100vh;
+  }
+  section.hero-12 .hero-content-wrapper .hero-headline-wrapper {
+    max-width: 700px;
+  }
+  section.hero-12 .hero-content-wrapper .social-icons {
+    display: block;
+    float: right;
+  }
+}
+
+section.hero-13 {
+  background: #EA5948;
+}
+
+section.hero-13 .hero-content-wrapper {
+  height: 100%;
+  padding: 1rem;
+}
+
+section.hero-13 .flex-column-to-row {
+  height: 100%;
+  min-height: 400px;
+}
+
+section.hero-13 .tagline {
+  display: inline-block;
+  padding: 1rem;
+  background: #F1F1F1;
+  color: #333333;
+}
+
+section.hero-13 h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+section.hero-13 .hero-blurb-text {
+  margin: 1rem 0;
+}
+
+section.hero-13 .social-icons {
+  float: left;
+}
+
+section.hero-13 form {
+  margin: 4rem 0 1rem;
+}
+
+section.hero-13 input {
+  border: 0;
+  padding: 1rem;
+  margin: .25rem 0;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  section.hero-13 {
+    height: 100vh;
+  }
+  section.hero-13 .flex-1-12 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    float: right;
+  }
+  section.hero-13 .hero-heading-align {
+    max-width: 600px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 0 0 10rem;
+  }
+  section.hero-13 .social-icons {
+    display: inline;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    float: right;
+    margin: 10rem 2rem;
+  }
+  section.hero-13 form {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 10rem;
   }
 }

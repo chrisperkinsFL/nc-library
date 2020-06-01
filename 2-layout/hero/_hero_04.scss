@@ -13,6 +13,9 @@ section.hero-4{
       h1, .tagline, .sub-heading{
         padding: 1rem;
       }
+      h1{
+        font-size: 2rem;
+      }
       .bg-1{
         color: $primary-color-2;
         background: $primary-color-3;
@@ -20,6 +23,20 @@ section.hero-4{
       .bg-2{
         color: $primary-color-3;
         background: $primary-color-2;
+      }
+      @media (min-width: $tablet){
+        height: 100vh;
+        .flex-column{
+          max-width: 75%;
+          margin: 0 auto;
+        }
+        h1{
+          font-size: 3rem;
+        }
+        .sub-heading{
+          font-size: 1.5rem;
+          max-width: 70%;
+        }
       }
   }
 }
