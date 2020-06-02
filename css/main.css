@@ -332,7 +332,6 @@ section.hero-4 .hero-content-wrapper {
 
 section.hero-4 .hero-content-wrapper .hero-content-container {
   padding: 2rem;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -342,8 +341,12 @@ section.hero-4 .hero-content-wrapper .tagline {
   text-transform: uppercase;
 }
 
-section.hero-4 .hero-content-wrapper h1, section.hero-4 .hero-content-wrapper .tagline, section.hero-4 .hero-content-wrapper .sub-heading {
+section.hero-4 .hero-content-wrapper h1, section.hero-4 .hero-content-wrapper .tagline {
   padding: 1rem;
+}
+
+section.hero-4 .hero-content-wrapper .sub-heading {
+  padding: 0 1rem;
 }
 
 section.hero-4 .hero-content-wrapper h1 {
@@ -360,9 +363,18 @@ section.hero-4 .hero-content-wrapper .bg-2 {
   background: #333333;
 }
 
+section.hero-4 .hero-content-wrapper .flip-vertical {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
 @media (min-width: 768px) {
   section.hero-4 .hero-content-wrapper {
     height: 100vh;
+  }
+  section.hero-4 .hero-content-wrapper .hero-content-container {
+    height: 90%;
   }
   section.hero-4 .hero-content-wrapper .flex-column {
     max-width: 75%;
@@ -371,9 +383,13 @@ section.hero-4 .hero-content-wrapper .bg-2 {
   section.hero-4 .hero-content-wrapper h1 {
     font-size: 3rem;
   }
+  section.hero-4 .hero-content-wrapper h2 {
+    font-size: 3rem;
+    max-height: 70%;
+    margin: 0 5rem 0 0;
+  }
   section.hero-4 .hero-content-wrapper .sub-heading {
     font-size: 1.5rem;
-    max-width: 70%;
   }
 }
 
