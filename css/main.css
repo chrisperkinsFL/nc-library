@@ -800,6 +800,9 @@ section.hero-14 .video-placeholder {
   section.hero-14 {
     padding: 8rem;
   }
+  section.hero-14 h1 {
+    font-size: 12rem;
+  }
 }
 
 section.hero-16 {
