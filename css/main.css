@@ -505,8 +505,9 @@ section.hero-11 .hero-content-wrapper .next-arrow {
   display: inline-block;
   color: #EA5948;
   background: #333333;
-  padding: .25rem 1rem;
+  padding: .5rem 1.5rem;
   font-size: 1.5rem;
+  margin: 1rem 0 0 1rem;
 }
 
 section.hero-11 .hero-content-wrapper .hero-blurb-text {
@@ -536,7 +537,13 @@ section.hero-11 .hero-content-wrapper .counter-active {
   section.hero-11 .hero-content-wrapper {
     height: 100vh;
   }
-  section.hero-11 .hero-content-wrapper .hero-heading-align,
+  section.hero-11 .hero-content-wrapper h1 {
+    max-width: 80%;
+  }
+  section.hero-11 .hero-content-wrapper .hero-heading-align {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
   section.hero-11 .hero-content-wrapper .hero-content-align {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -554,6 +561,16 @@ section.hero-11 .hero-content-wrapper .counter-active {
   section.hero-11 .hero-content-wrapper .counter {
     position: absolute;
     bottom: 0;
+    margin-bottom: 5rem;
+  }
+  section.hero-11 .hero-content-wrapper .social-icons {
+    margin: 0 5rem 5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  section.hero-11 .hero-content-wrapper h1 {
+    font-size: 4rem;
   }
 }
 
