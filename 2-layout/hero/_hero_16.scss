@@ -1,13 +1,60 @@
 section.hero-16{
   background: $primary-color-1;
+  color: $primary-color-3;
   .hero-content-wrapper{
       h1{
         font-size: 3rem;
+        font-weight: bold;
       }
-      
+      .flex-9-12,
+      .flex-3-12{
+        padding: 1rem;
+      }
+      .flex-3-12{
+        background: $primary-color-2;
+      }
+      .tagline{
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .icon-container{
+        margin: 1rem 0;
+      }
+      .icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background: $primary-color-3;
+        display: inline-block;
+        margin: 0 1rem 0 0;
+      }
+      .icon-text{
+        vertical-align: top;
+        display: inline-block;
+      }
+      .icon-text span{
+        margin: .5rem 0 0;
+        font-weight: 600;
+        display: block;
+        font-size: 1.5rem;
+      }
+      .image-placeholder{
+        display: inline-block;
+        background: $primary-color-1;
+        width: 40%;
+        height: 150px;
+      }
+      .image-placeholder-text{
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+        margin: 0 0 0 1rem;
+      }
+      .show-all{
+        display: block;
+      }
       @media (min-width: $tablet){
-        height: 100vh;
-        
+        height: 100vh;      
       }
       @media (min-width: $desktop){
         

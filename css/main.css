@@ -824,10 +824,69 @@ section.hero-14 .video-placeholder {
 
 section.hero-16 {
   background: #EA5948;
+  color: #F1F1F1;
 }
 
 section.hero-16 .hero-content-wrapper h1 {
   font-size: 3rem;
+  font-weight: bold;
+}
+
+section.hero-16 .hero-content-wrapper .flex-9-12,
+section.hero-16 .hero-content-wrapper .flex-3-12 {
+  padding: 1rem;
+}
+
+section.hero-16 .hero-content-wrapper .flex-3-12 {
+  background: #333333;
+}
+
+section.hero-16 .hero-content-wrapper .tagline {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section.hero-16 .hero-content-wrapper .icon-container {
+  margin: 1rem 0;
+}
+
+section.hero-16 .hero-content-wrapper .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #F1F1F1;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+section.hero-16 .hero-content-wrapper .icon-text {
+  vertical-align: top;
+  display: inline-block;
+}
+
+section.hero-16 .hero-content-wrapper .icon-text span {
+  margin: .5rem 0 0;
+  font-weight: 600;
+  display: block;
+  font-size: 1.5rem;
+}
+
+section.hero-16 .hero-content-wrapper .image-placeholder {
+  display: inline-block;
+  background: #EA5948;
+  width: 40%;
+  height: 150px;
+}
+
+section.hero-16 .hero-content-wrapper .image-placeholder-text {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin: 0 0 0 1rem;
+}
+
+section.hero-16 .hero-content-wrapper .show-all {
+  display: block;
 }
 
 @media (min-width: 768px) {
