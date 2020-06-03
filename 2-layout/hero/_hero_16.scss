@@ -16,6 +16,7 @@ section.hero-16{
       .tagline{
         font-weight: 600;
         text-transform: uppercase;
+        margin: 1rem 0;
       }
       .icon-container{
         margin: 1rem 0;
@@ -41,7 +42,7 @@ section.hero-16{
       .image-placeholder{
         display: inline-block;
         background: $primary-color-1;
-        width: 40%;
+        width: 150px;
         height: 150px;
       }
       .image-placeholder-text{
@@ -51,13 +52,49 @@ section.hero-16{
         margin: 0 0 0 1rem;
       }
       .show-all{
+        text-transform: uppercase;
+        margin: 1rem 0;
+        font-weight: 600;
         display: block;
       }
+      .image-placeholder-wrapper:nth-child(2){
+        display: none;
+      }
       @media (min-width: $tablet){
-        height: 100vh;      
+        height: 100vh;
+        h1{
+          max-width: 700px;
+        }
+        .icon-container{
+          margin: 2rem 4rem 0 0;
+          display: inline-block;
+        }
+        .flex-column{
+          height: 100%;
+        }
+        .flex-9-12,
+        .flex-3-12{
+          margin: 0 0 0 10%;
+        }
+        .flex-3-12{
+          padding: 2rem 3rem;
+        }
+        .top-wrapper{
+          position: absolute;
+          top: 40%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        .show-all{
+          display: inline-block;
+          vertical-align: top;
+        }
       }
       @media (min-width: $desktop){
-        
+        .image-placeholder-wrapper,
+        .image-placeholder-wrapper:nth-child(2){
+          display: inline-block;
+        }
       }      
   }
 }

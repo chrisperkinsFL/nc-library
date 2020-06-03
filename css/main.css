@@ -844,6 +844,7 @@ section.hero-16 .hero-content-wrapper .flex-3-12 {
 section.hero-16 .hero-content-wrapper .tagline {
   font-weight: 600;
   text-transform: uppercase;
+  margin: 1rem 0;
 }
 
 section.hero-16 .hero-content-wrapper .icon-container {
@@ -874,7 +875,7 @@ section.hero-16 .hero-content-wrapper .icon-text span {
 section.hero-16 .hero-content-wrapper .image-placeholder {
   display: inline-block;
   background: #EA5948;
-  width: 40%;
+  width: 150px;
   height: 150px;
 }
 
@@ -886,12 +887,52 @@ section.hero-16 .hero-content-wrapper .image-placeholder-text {
 }
 
 section.hero-16 .hero-content-wrapper .show-all {
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: 600;
   display: block;
+}
+
+section.hero-16 .hero-content-wrapper .image-placeholder-wrapper:nth-child(2) {
+  display: none;
 }
 
 @media (min-width: 768px) {
   section.hero-16 .hero-content-wrapper {
     height: 100vh;
   }
+  section.hero-16 .hero-content-wrapper h1 {
+    max-width: 700px;
+  }
+  section.hero-16 .hero-content-wrapper .icon-container {
+    margin: 2rem 4rem 0 0;
+    display: inline-block;
+  }
+  section.hero-16 .hero-content-wrapper .flex-column {
+    height: 100%;
+  }
+  section.hero-16 .hero-content-wrapper .flex-9-12,
+  section.hero-16 .hero-content-wrapper .flex-3-12 {
+    margin: 0 0 0 10%;
+  }
+  section.hero-16 .hero-content-wrapper .flex-3-12 {
+    padding: 2rem 3rem;
+  }
+  section.hero-16 .hero-content-wrapper .top-wrapper {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  section.hero-16 .hero-content-wrapper .show-all {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
-/*# sourceMappingURL=main.css.map */
+
+@media (min-width: 992px) {
+  section.hero-16 .hero-content-wrapper .image-placeholder-wrapper,
+  section.hero-16 .hero-content-wrapper .image-placeholder-wrapper:nth-child(2) {
+    display: inline-block;
+  }
+}
