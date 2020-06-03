@@ -60,6 +60,12 @@ section.hero-16{
       .image-placeholder-wrapper:nth-child(2){
         display: none;
       }
+      .material-icons{
+        color: $primary-color-1;
+        position: absolute;
+        margin: .6rem;
+        font-size: 2.5rem;
+      }
       @media (min-width: $tablet){
         height: 100vh;
         h1{
@@ -94,6 +100,7 @@ section.hero-16{
         .image-placeholder-wrapper,
         .image-placeholder-wrapper:nth-child(2){
           display: inline-block;
+          max-width: 350px;
         }
       }      
   }

@@ -1,0 +1,103 @@
+section.hero-17{
+  background: $primary-color-2;
+  color: $primary-color-3;
+  .hero-content-wrapper{
+      h1{
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .hero-blurb-text{
+        display: block;
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .flex-9-12,
+      .flex-3-12{
+        padding: 1rem;
+      }
+      .flex-3-12{
+        background: $primary-color-2;
+      }
+      .tagline{
+        margin: 1rem 0;
+        display: none;
+      }
+      
+      .show-all{
+        text-transform: uppercase;
+        margin: 1rem 0;
+        font-weight: 600;
+        display: block;
+      }
+      .dot {
+        height: 1rem;
+        width: 1rem;
+        background-color: $primary-color-1;
+        border-radius: 50%;
+        margin: 1rem 0 0;
+        opacity: .6;
+      }
+      .active-dot{
+        width: 1.25rem;
+        height: 1.2rem;
+        opacity: 1;
+      }
+      .service-text{
+        margin: 1rem 0;
+      }
+      .flex-6-12:nth-child(2){
+        border-bottom: 1rem solid $primary-color-1;
+      }
+      .dot-box{
+        margin: 0 0 0 1rem;
+      }
+      
+      @media (min-width: $tablet){
+        height: 100vh;
+        h1{
+          text-align: left;
+          font-size: 5rem;
+          font-weight: 600;
+        }
+        .hero-blurb-text{
+          text-align: left;
+        }
+        .service-text{
+          display: inline-block;
+          margin: 1rem 3rem 0 0;
+        }
+        .flex-column{
+          height: 100%;
+        }
+        .flex-9-12{
+          margin: 0 0 0 10%;
+        }
+        .flex-3-12{
+          padding: 2rem 3rem;
+        }
+        .top-wrapper{
+          position: absolute;
+          top: 40%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        .show-all{
+          display: inline-block;  
+        }
+        .flex-6-12{
+          padding: 2rem 2rem 2rem  0;
+        }
+        .dot-box{
+          margin: 0 0 0 3rem;
+        }
+        .tagline{
+          display: block;
+        }
+      }
+      @media (min-width: $desktop){
+        
+      }      
+  }
+}
