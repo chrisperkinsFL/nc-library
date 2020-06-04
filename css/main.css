@@ -529,7 +529,8 @@ section.hero-7 .flex-2-12 {
 
 section.hero-7 .hero-content-wrapper {
   max-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 
 section.hero-7 .hero-content-wrapper .hero-content-container {
@@ -551,7 +552,7 @@ section.hero-7 .hero-content-wrapper h1 {
 
 section.hero-7 .hero-content-wrapper .sub-heading {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 section.hero-7 .hero-content-wrapper .bg-1 {
@@ -567,6 +568,18 @@ section.hero-7 .hero-content-wrapper .bg-2 {
 section.hero-7 .hero-content-wrapper .bg-3 {
   color: #F1F1F1;
   background: #EA5948;
+}
+
+section.hero-7 .hero-content-wrapper .video-placeholder {
+  width: 120px;
+  height: 80px;
+  background: #333333;
+}
+
+section.hero-7 .hero-content-wrapper .material-icons {
+  color: #F1F1F1;
+  font-size: 3rem;
+  margin: 1rem 2rem;
 }
 
 @media (min-width: 768px) {
@@ -830,7 +843,7 @@ section.hero-13 .flex-column-to-row {
 
 section.hero-13 .tagline {
   display: inline-block;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background: #F1F1F1;
   color: #333333;
 }
@@ -842,6 +855,7 @@ section.hero-13 h1 {
 
 section.hero-13 .hero-blurb-text {
   margin: 1rem 0;
+  font-size: 1.5rem;
 }
 
 section.hero-13 .social-icons {
@@ -860,9 +874,34 @@ section.hero-13 .fab {
   margin: .25rem;
 }
 
+section.hero-13 .filled-button {
+  padding: .78rem 3rem 1rem;
+  background: #333333;
+  color: #F1F1F1;
+}
+
+section.hero-13 ::-webkit-input-placeholder {
+  color: #969696;
+}
+
+section.hero-13 :-ms-input-placeholder {
+  color: #969696;
+}
+
+section.hero-13 ::-ms-input-placeholder {
+  color: #969696;
+}
+
+section.hero-13 ::placeholder {
+  color: #969696;
+}
+
 @media (min-width: 768px) {
   section.hero-13 {
     height: 100vh;
+  }
+  section.hero-13 h1 {
+    font-size: 4rem;
   }
   section.hero-13 .flex-1-12 {
     -ms-flex-item-align: end;
@@ -1003,8 +1042,8 @@ section.hero-14 .video-placeholder {
 }
 
 section.hero-16 {
-  background: #EA5948;
-  color: #F1F1F1;
+  background: #F1F1F1;
+  color: #333333;
 }
 
 section.hero-16 .hero-content-wrapper h1 {
@@ -1019,6 +1058,7 @@ section.hero-16 .hero-content-wrapper .flex-3-12 {
 
 section.hero-16 .hero-content-wrapper .flex-3-12 {
   background: #333333;
+  color: #F1F1F1;
 }
 
 section.hero-16 .hero-content-wrapper .tagline {
@@ -1035,7 +1075,7 @@ section.hero-16 .hero-content-wrapper .icon {
   width: 60px;
   height: 60px;
   border-radius: 60px;
-  background: #F1F1F1;
+  background: #333333;
   display: inline-block;
   margin: 0 1rem 0 0;
 }
@@ -1235,4 +1275,3 @@ section.hero-17 .hero-content-wrapper .dot-box {
     display: block;
   }
 }
-/*# sourceMappingURL=main.css.map */

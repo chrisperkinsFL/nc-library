@@ -10,7 +10,7 @@ section.hero-13{
       }
       .tagline{
         display: inline-block;
-        padding: 1rem;
+        padding: .5rem 1rem;
         background: $primary-color-3;
         color: $primary-color-2;
       }
@@ -20,6 +20,7 @@ section.hero-13{
       }
       .hero-blurb-text{
         margin: 1rem 0;
+        font-size: 1.5rem;
       }
       .social-icons{
         float: left;
@@ -34,8 +35,19 @@ section.hero-13{
       .fab{
         margin: .25rem;
       }
+      .filled-button{
+        padding: .78rem 3rem 1rem;
+        background: $primary-color-2;
+        color: $primary-color-3;
+      }
+      ::placeholder{
+        color: rgb(150, 150, 150);
+      }
       @media (min-width: $tablet){
         height: 100vh; 
+        h1{
+          font-size: 4rem;
+        }
         .flex-1-12{
           align-self: flex-end;
           float: right;
