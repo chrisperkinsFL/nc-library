@@ -25,7 +25,7 @@
     .menu-icon{
       cursor: pointer;
       float: left;
-      padding: 28px 20px;
+      padding: 2rem 1rem;
       position: relative;
       user-select: none;
 
@@ -76,6 +76,17 @@
           }
         }
     }  
+
+    .shop-icon{
+      float: right;
+      padding: .75rem;
+      color: $primary-color-2;
+    }
+    .material-icons{
+      font-size: 2rem;
+      margin: .3rem 1rem;
+      vertical-align: top;
+    }
   
   @media (min-width: $tablet){
       height: auto;
@@ -83,7 +94,7 @@
           float: right;
             a{
               font-size: 1.25rem;
-              padding: 20px 30px;
+              padding: 1.25rem;
             }
         }
         .menu{
