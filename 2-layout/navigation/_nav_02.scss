@@ -2,8 +2,11 @@
   color: $primary-color-3;
   background: $primary-color-1;
   width: 100%;
+  position: relative;
     .flex-row{
+      //nav height - change the desktop #profile margin-top to whatever the nav height is. 
       height: 60px;
+      position: relative;
     }
     .flex-1-12 {
       max-width: 50px;
@@ -51,10 +54,12 @@
       height: 100%;
       padding: 100px 1rem;
       position: absolute;
-      font-size: 12vw;
+      font-size: 10vw;
       background: $primary-color-2;
     }
-
+    .welcome{
+      display: none;
+    }
     .close{
       display: none;
     }
@@ -76,15 +81,37 @@
       max-width: 100%;
       min-width: 400px;
     }
+    #profile{
+      min-height: auto;
+      position: absolute;
+      font-size: 1rem;
+      max-width: 220px;
+      //the margin top needs to be the same as the height of the nav
+      margin: 60px 0 0 ;
+      height: auto;
+      top: 0;
+      right: 0;
+      z-index: -999999;
+      text-align: left;
+      padding: 1rem;
+      font-weight: normal;
+    }
+    #profile li{
+      margin: .5rem 0;
+    }
+    .welcome{
+      display: block;
+    }
+    .profile-border{
+      border-top: 1px solid $primary-color-3;
+      border-bottom: 1px solid $primary-color-3;
+    }
     .nav-icon{
       //hide the nav icon on tablets+
       display: none;
     }
     #nav-icon-open,
     #nav-icon-close{
-      display: none;
-    }
-    #profile{
       display: none;
     }
     #menu{
@@ -96,9 +123,9 @@
       margin: 0;
       text-align: right;
     }
-    ul li{
+    #menu li{
       display: inline-block;
-      margin: 0 .75rem;
+      margin: .25rem .75rem;
       font-size: 1rem;
       font-weight: 600;
     }
@@ -111,6 +138,7 @@
         display: block;
         min-height: auto;
       }
+      
     }
 
     //this is only used for the max width version of the nav.  The variable is being pulled from 1-base _media_queries.scss
@@ -119,4 +147,3 @@
       margin: 0 auto;
     }
 }
-
