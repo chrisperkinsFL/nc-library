@@ -39,6 +39,34 @@ a {
   max-width: 1440px;
 }
 
+.flip-vertical {
+  display: inline;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+span {
+  display: block;
+}
+
+.filled-button {
+  display: inline-block;
+  background: #F1F1F1;
+  color: #333333;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+
+input {
+  border: 0;
+  padding: 1rem;
+  margin: .25rem 0;
+  width: 300px;
+}
+
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,34 +197,6 @@ a {
           flex: 12;
 }
 
-.flip-vertical {
-  display: inline;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-span {
-  display: block;
-}
-
-.filled-button {
-  display: inline-block;
-  background: #F1F1F1;
-  color: #333333;
-  text-decoration: none;
-  padding: 1rem 3rem;
-}
-
-input {
-  border: 0;
-  padding: 1rem;
-  margin: .25rem 0;
-  width: 300px;
-}
-
 .header-2 {
   color: #F1F1F1;
   background: #EA5948;
@@ -240,8 +240,9 @@ input {
   font-size: 1.25rem;
   color: #F1F1F1;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
+  padding: 0 20px;
 }
 
 .header-2 #menu {
@@ -250,7 +251,7 @@ input {
   height: 100%;
   padding: 100px 1rem;
   position: absolute;
-  font-size: 16vw;
+  font-size: 12vw;
   width: 100%;
   height: 100vh;
   background: #EA5948;
@@ -379,8 +380,7 @@ input {
 }
 
 section.hero-1 .hero-content-wrapper {
-  min-height: 100%;
-  padding: 1rem 1rem 0;
+  overflow-y: hidden;
   background: #333333;
   color: #EA5948;
 }
@@ -446,6 +446,7 @@ section.hero-3 .hero-content-wrapper {
   color: #EA5948;
   height: 100%;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 section.hero-3 .hero-content-wrapper h1 {
@@ -509,6 +510,7 @@ section.hero-3 .hero-content-wrapper .bottom-container {
 section.hero-4 .hero-content-wrapper {
   max-width: 100%;
   min-height: 100%;
+  overflow-y: hidden;
 }
 
 section.hero-4 .hero-content-wrapper .hero-content-container {
@@ -587,6 +589,7 @@ section.hero-7 .hero-content-wrapper {
 }
 
 section.hero-7 .hero-content-wrapper .hero-content-container {
+  overflow-y: hidden;
   padding: 1rem;
   min-height: 400px;
   height: 100%;
@@ -730,16 +733,17 @@ section.hero-11 {
   background: #EA5948;
 }
 
+section.hero-11 .hero-content-wrapper {
+  overflow-y: hidden;
+  padding: 1rem;
+}
+
 section.hero-11 .hero-content-wrapper .tagline {
   text-transform: uppercase;
 }
 
 section.hero-11 .hero-content-wrapper h1 {
   font-size: 3rem;
-}
-
-section.hero-11 .hero-content-wrapper h1, section.hero-11 .hero-content-wrapper span, section.hero-11 .hero-content-wrapper .action-link {
-  margin: 1rem;
 }
 
 section.hero-11 .hero-content-wrapper .tagline {
@@ -824,6 +828,11 @@ section.hero-12 {
   background: #EA5948;
 }
 
+section.hero-12 .hero-content-wrapper {
+  overflow-y: hidden;
+  padding: 1rem;
+}
+
 section.hero-12 .hero-content-wrapper h1 {
   font-size: 3rem;
 }
@@ -835,7 +844,7 @@ section.hero-12 .hero-content-wrapper .hero-headline-wrapper {
 }
 
 section.hero-12 .hero-content-wrapper h1, section.hero-12 .hero-content-wrapper span, section.hero-12 .hero-content-wrapper .filled-button {
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 section.hero-12 .hero-content-wrapper .flex-row {
@@ -886,6 +895,7 @@ section.hero-13 {
 
 section.hero-13 .hero-content-wrapper {
   height: 100%;
+  overflow-y: hidden;
   padding: 1rem;
 }
 
@@ -949,6 +959,11 @@ section.hero-13 ::placeholder {
   color: #969696;
 }
 
+section.hero-13 input {
+  max-width: 300px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   section.hero-13 {
     height: 100vh;
@@ -985,9 +1000,8 @@ section.hero-13 ::placeholder {
     display: none;
   }
   section.hero-13 form {
-    position: absolute;
     bottom: 0;
-    margin: 0 0 10rem;
+    margin: 0 0 4rem;
   }
 }
 
@@ -996,6 +1010,8 @@ section.hero-14 {
   color: #F1F1F1;
   padding: 1rem;
   min-height: 400px;
+  overflow-y: hidden;
+  padding: 1rem;
 }
 
 section.hero-14 .hero-content-wrapper {
@@ -1094,9 +1110,67 @@ section.hero-14 .video-placeholder {
   }
 }
 
+section.hero-15 {
+  background: #F1F1F1;
+  color: #333333;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+  padding: 1rem;
+}
+
+section.hero-15 .hero-content-wrapper .tagline,
+section.hero-15 .hero-content-wrapper h1,
+section.hero-15 .hero-content-wrapper .sub-heading,
+section.hero-15 .hero-content-wrapper .scrolling-wrapper-flexbox {
+  padding: 1rem 0;
+}
+
+section.hero-15 .hero-content-wrapper h1 {
+  font-size: calc(2rem + 4vw);
+  line-height: calc(2rem + 5vw);
+}
+
+section.hero-15 .hero-content-wrapper .sub-heading {
+  font-size: 1.25rem;
+}
+
+section.hero-15 .hero-content-wrapper .scrolling-wrapper-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+section.hero-15 .hero-content-wrapper .scrolling-wrapper-flexbox .card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 3px;
+  max-width: 200px;
+  min-height: 400px;
+  background: #EA5948;
+  min-width: 60vw;
+  margin: 0 2rem 0 0;
+}
+
+section.hero-15 .hero-content-wrapper .scrolling-wrapper-flexbox {
+  -webkit-overflow-scrolling: touch;
+}
+
+section.hero-15 .hero-content-wrapper .scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
 section.hero-16 {
   background: #F1F1F1;
   color: #333333;
+}
+
+section.hero-16 .hero-content-wrapper {
+  overflow-y: hidden;
 }
 
 section.hero-16 .hero-content-wrapper h1 {
@@ -1221,6 +1295,10 @@ section.hero-16 .hero-content-wrapper .material-icons {
 section.hero-17 {
   background: #333333;
   color: #F1F1F1;
+}
+
+section.hero-17 .hero-content-wrapper {
+  overflow-y: hidden;
 }
 
 section.hero-17 .hero-content-wrapper h1 {

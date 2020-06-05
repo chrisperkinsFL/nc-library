@@ -1,14 +1,13 @@
 section.hero-11{
   background: $primary-color-1;
   .hero-content-wrapper{
+    overflow-y: hidden;
+    padding: 1rem;
       .tagline{
         text-transform: uppercase;
       }
       h1{
         font-size: 3rem;
-      }
-      h1, span, .action-link{
-        margin: 1rem;
       }
       .tagline{
         display: none;

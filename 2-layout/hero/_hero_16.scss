@@ -2,6 +2,7 @@ section.hero-16{
   background: $primary-color-3;
   color: $primary-color-2;
   .hero-content-wrapper{
+    overflow-y: hidden;
       h1{
         font-size: 3rem;
         font-weight: bold;

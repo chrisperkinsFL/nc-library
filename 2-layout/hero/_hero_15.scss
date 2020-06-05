@@ -1,0 +1,54 @@
+section.hero-15{
+  background: $primary-color-3;
+  color: $primary-color-2;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+  padding: 1rem;
+    .hero-content-wrapper{
+      .tagline, 
+      h1, 
+      .sub-heading,
+      .scrolling-wrapper-flexbox{
+        padding: 1rem 0;
+      }
+      h1{
+       font-size: calc(2rem + 4vw);
+       line-height: calc(2rem + 5vw);
+      }
+      .sub-heading{
+        font-size: 1.25rem;
+      }
+      .scrolling-wrapper-flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;      
+        .card {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          margin-right: 3px;
+          max-width: 200px;
+          min-height: 400px;
+          background: $primary-color-1;
+          min-width: 60vw;
+          margin: 0 2rem 0 0;
+        }
+      }
+      .scrolling-wrapper-flexbox {
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+      @media (min-width: $tablet){
+      
+      }  
+      @media (min-width: $desktop){
+        
+      }
+      @media (min-width: $oversized-desktop){
+        
+      }
+}

@@ -1,6 +1,8 @@
 section.hero-12{
   background: $primary-color-1;
   .hero-content-wrapper{
+    overflow-y: hidden;
+    padding: 1rem;
       h1{
         font-size: 3rem;
       }
@@ -9,7 +11,7 @@ section.hero-12{
         text-align: right;
       }
       h1, span, .filled-button{
-        margin: 2rem;
+        margin: 2rem 0;
       }
       .flex-row{
         height: 50%;
