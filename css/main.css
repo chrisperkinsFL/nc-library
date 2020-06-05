@@ -230,7 +230,7 @@ input {
 .header .menu-icon {
   cursor: pointer;
   float: left;
-  padding: 28px 20px;
+  padding: 2rem 1rem;
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -295,6 +295,18 @@ input {
   top: 0;
 }
 
+.header .shop-icon {
+  float: right;
+  padding: .75rem;
+  color: #333333;
+}
+
+.header .material-icons {
+  font-size: 2rem;
+  margin: .3rem 1rem;
+  vertical-align: top;
+}
+
 @media (min-width: 768px) {
   .header {
     height: auto;
@@ -304,7 +316,7 @@ input {
   }
   .header li a {
     font-size: 1.25rem;
-    padding: 20px 30px;
+    padding: 1.25rem;
   }
   .header .menu {
     clear: none;
@@ -1431,3 +1443,4 @@ section.hero-17 .hero-content-wrapper .dot-box {
     display: block;
   }
 }
+/*# sourceMappingURL=main.css.map */
