@@ -306,7 +306,6 @@ input {
     height: auto;
     top: 0;
     right: 0;
-    z-index: -999999;
     text-align: left;
     padding: 1rem;
     font-weight: normal;
