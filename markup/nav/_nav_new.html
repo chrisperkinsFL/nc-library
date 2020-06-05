@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/main.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <header class="header-2">
+    <div class="flex-row">
+      <div class="flex-5-12">
+          <span id="nav-icon-open" onclick="openNav()"> <i class="material-icons">menu</i></span>
+          <span id="nav-icon-close" class="close" onclick="closeNav()">X</span>
+            <ul id="menu">
+              <li>Home</li>
+              <li>Shop</li>
+              <li>Education</li>
+              <li>Contact Us</li>
+            </ul>
+
+            <ul id="profile" class="close">
+              <li>Saved Collections</li>
+              <li>Purchase History</li>
+              <li>Your Account</li>
+              <li>Logout</li>
+            </ul>
+      </div>
+      <div class="flex-5-12 logo">
+        NINJACATORS
+      </div>
+      <div class="flex-1-12">
+        <i class="material-icons">shopping_cart</i>
+      </div>
+      <div class="flex-1-12 profile-image">
+        <img src="../../img/profile-image.png" onclick="openProfile()"/>
+      </div>
+    </div>
+  </header>
+
+<script>
+function openNav() {
+  document.getElementById("menu").style.display = "block";
+
+  var open_icon = document.getElementById("nav-icon-open");
+      open_icon.classList.remove("open")
+      open_icon.classList.add("close");
+  var close_icon = document.getElementById("nav-icon-close");
+      close_icon.classList.add("close");
+      close_icon.classList.add("open");
+}
+
+function closeNav() {
+  document.getElementById("menu").style.display = "none";
+  
+  var open_icon = document.getElementById("nav-icon-open");
+      open_icon.classList.remove("close")
+      open_icon.classList.add("open");
+  var close_icon = document.getElementById("nav-icon-close");
+      close_icon.classList.remove("open")
+      close_icon.classList.add("close");
+}
+
+function openProfile() {
+   var element = document.getElementById("profile");
+   element.classList.toggle("open-profile");
+}
+
+
+</script>
+
+</body>
+</html>
