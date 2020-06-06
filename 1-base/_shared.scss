@@ -3,6 +3,10 @@ body{
   color: $primary-color-2;
 }
 
+h1{
+  font-size: calc(3rem + 1vw); 
+}
+
 a{
   text-decoration: none;
   color: $primary-color-3;

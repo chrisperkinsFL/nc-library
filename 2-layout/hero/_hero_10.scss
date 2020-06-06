@@ -1,39 +1,65 @@
 section.hero-10{
     background: $primary-color-2;
+    color: $primary-color-3;
     height: 100vh;
-  .hero-content-wrapper{
-    max-width: 90%;
-    min-height: 100%;
-    float: right;
-    background: $primary-color-1;
-      .hero-content-container{
-        padding: 2rem;
-        justify-content: center;
+    .hero-content-wrapper{
+      background: $primary-color-1;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: calc(100vh - 50px);
+      width: calc(100vw - 50px);
+      .tracking{
+        position: absolute;
+        bottom: 10vh;
+          li{
+            margin: 0 2rem 0 0;
+            display: inline-block;
+            font-size: 1.5rem;
+          }
       }
-      h1, .tagline{
-        padding: 1rem;
+      .hero-content-container{
+          width: 90%;
       }
       .sub-heading{
-        padding: 0 1rem;
+        margin: 4rem 0 0;
+        font-size: calc(1rem + 1vw);
       }
-      h1{
-        font-size: 2rem;
-      }
-      ul{
-        padding: 0 2rem;
-      }
-      li{
-        display: inline-block;
-        margin: 0 1rem;
+      h1 { font-size: calc(2.5rem + 1vw); }
+      .flex-12-12{
+        margin: 10vw 0 0 10vw;
+        align-self: center;
       }
       @media (min-width: $tablet){
-        height: 100vh;
-        li{
-          display: inline-block;
+          height: calc(100vh - 100px);
+          width: calc(100vw - 100px);
+        .tracking{
+          right: 0;
+            li{
+              margin: 0 2rem 2rem 0;
+              display: block;
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        .sub-heading{
+          margin: 0;
         }
-        .hero-content-container{
-          height: 90%;
+        
+        .flex-12-12{
+          align-self: flex-end;
+          padding: 0 0 10vh;
+        }
+      }
+      @media (min-width: $desktop){
+          height:calc(100vh - 150px);
+          width: calc(100vw - 150px);
+      }
+      @media (min-width: $oversized-desktop){
+        height:calc(100vh - 200px);
+        width: calc(100vw - 200px);
       }
     }
   }
-}
