@@ -1,0 +1,76 @@
+section.hero-09{
+  background: $primary-color-2;
+  color: $primary-color-3;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+  padding: 9vh 1rem 4vh;
+    .hero-content-wrapper{
+      background: $primary-color-1;
+      min-height: 86vh;
+      height: 100%;
+      padding: 1rem;
+    }
+    .top{
+      position: relative;
+      margin: 0 0 2rem;
+    }
+    .sub-heading{
+      font-size: 1.5rem;
+      margin: 1rem 0 0;
+    }
+    .main-content-wrapper{
+      position: absolute;
+      bottom: 0;
+    }
+    .action-link{
+      display: block;
+      margin: 2rem 0 0;
+    }
+    .progress-flex{
+      width: 100%;
+      flex: 0;
+      margin: 2rem 0;
+    }
+    .progress-line{
+      min-width: 100px;
+      width: 100%;
+      height: 2px;
+      background: $primary-color-3;
+    }
+    .active{
+      min-width: 0px;
+      width: 20%;
+      background: $primary-color-2;
+      margin: -2px 0 0;
+    }
+    .counter{
+      
+    }
+    .counter-active{
+      margin: 0;
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+      @media (min-width: $tablet){
+        .hero-content-wrapper{
+          min-height: 91vh;
+        }
+        .top{
+          flex: 4;
+        }
+        .progress-flex{
+          flex: 6;
+          align-self: flex-end;
+        }
+        .progress-line-wrapper{
+          max-width: 200px;
+        }
+      }  
+      @media (min-width: $desktop){
+        
+      }
+      @media (min-width: $oversized-desktop){
+        
+      }
+}

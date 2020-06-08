@@ -1,0 +1,101 @@
+section.hero-05{
+  background: $primary-color-1;
+  color: $primary-color-2;
+  overflow-y: hidden;
+    .hero-content-wrapper{
+      min-height: 100vh;
+      height: 100%;
+    }
+    .top{
+      position: relative;
+      padding: 1rem;
+    }
+    .left-content-wrapper{
+      position: absolute;
+      bottom: 0;
+      padding: 0 0 2rem;
+    }
+    .arrows-wrapper{
+      float: right;
+    }
+    h1{
+      clear: both;
+    }
+    .sub-heading{
+      font-size: 1.5rem;
+    }
+    .powerful-item{
+      background: $primary-color-2;
+      height: 200px;
+      position: relative;
+      margin: -2rem 1rem 0;
+    }
+    .middle{
+      background:$primary-color-3;
+    }
+    .powerful-cta{
+      background: $primary-color-3;
+      color: $primary-color-2;
+      position: absolute;
+      width: 100%;
+      padding: 1rem;
+      bottom: 0;
+    }
+    .slide-numbers{
+      display: none;
+    }
+      @media (min-width: $tablet){
+        .top{
+          position: unset;
+          flex: 3;
+          align-self: center;
+          margin: 0 0 30vh;
+        }
+        .middle{
+          flex: 5;
+        }
+        .left-content-wrapper{
+          position: absolute;
+          max-width: 500px;
+          bottom: auto;
+          margin: 0 0 10vh 10vw;
+        }
+        .arrows-wrapper{
+          float: left;
+        }
+        .powerful{
+          align-self: flex-end;
+          margin: 0 0 10vh;
+        }
+        .powerful-item{
+          height: 200px;
+          width: 200px;
+          margin-left: -6rem;
+        }
+        .slide-numbers{
+          display: block;
+          ul{
+            margin: 0 0 10vh 10vw;
+            position: absolute;
+            bottom: 0;
+            li{
+              display: inline-block;
+              width: 50px;
+              bottom: 0;
+              font-size: 1.5rem;
+              text-align: center;
+            }
+            .active{
+              padding: .5rem;
+              background: $primary-color-3;
+            }
+          }
+        }
+      }  
+      @media (min-width: $desktop){
+        
+      }
+      @media (min-width: $oversized-desktop){
+        
+      }
+}

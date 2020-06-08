@@ -1,0 +1,111 @@
+section.hero-08{
+  background: $primary-color-2;
+  color: $primary-color-3;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+    .hero-content-wrapper{
+      
+    }
+    .cta-container{
+      position: absolute;
+      top: 20%;
+      margin: 0 0 0 6vw;
+    }
+    .tagline{
+      text-transform: uppercase;
+    }
+    .flex-row{
+      flex-wrap: wrap;
+    }
+    .left-flex,
+    .right-flex{
+      width: 50%;
+      min-height: 70vh;
+      background: $primary-color-1;
+    }
+    .left-flex{
+      background: none;
+    }
+    .bottom-flex{
+      margin: 0 0 0 6vw;
+      min-height: 30vh;
+      li{
+        display: inline-block;
+      }
+    }
+    .progress-line{
+      background: $primary-color-1;
+      height: 1px;
+      width: 100%;
+    }
+    .progress-line.active{
+      margin: -2px 0 0;
+      background: $primary-color-3;
+      height: 2px;
+      width: 20%;
+    }
+    .progress-line.not-active{
+      display: none;
+    }
+    .scrolling-wrapper-flexbox{
+      margin: 6vh 0 0;
+      display: flex;
+    }
+    .scrolling-wrapper-flexbox {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;      
+      li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin-right: 3px;
+        max-width: 70%;
+        background: $primary-color-2;
+        margin: 0 2rem 0 0;
+        width: 100%;
+        span{
+          margin: 1rem 0 0;
+        }
+      }
+    }
+    .scrolling-wrapper-flexbox {
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .sub-heading{
+      font-size: 1.5rem;
+    }
+      @media (min-width: $tablet){
+        .left-flex{
+          width: 20%;
+        }
+        .right-flex{
+          width: 80%;
+        }
+        .scrolling-wrapper-flexbox li{
+          &:last-child{
+            margin: 0;
+          }
+          .scroll-text{
+            max-width: 80%;
+          }
+          flex: auto;
+        }
+        .bottom-flex{
+          width: 90vw;
+          margin: 0 6vw;
+        }
+      }  
+      @media (min-width: $desktop){
+        .cta-container{
+          max-width: 600px;
+        }
+      }
+      @media (min-width: $oversized-desktop){
+        
+      }
+}

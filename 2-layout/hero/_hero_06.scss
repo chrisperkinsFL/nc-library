@@ -1,0 +1,100 @@
+section.hero-06{
+  background: $primary-color-2;
+  color: $primary-color-3;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+    .hero-content-wrapper{
+
+    }
+      .top{
+        background: $primary-color-3;
+        color: $primary-color-2;
+        padding: 4rem 1rem 8rem;
+      }
+      .empty{
+        background: $primary-color-1;
+        height: 100%;
+        min-height: 200px;
+        margin: 0 1rem;
+        margin: -4rem 1rem 2rem;
+      }
+      .main-content{
+        margin: 0 1rem;
+        .tagline, h1, .sub-text, .filled-button{
+          margin: 1rem 0;
+        }
+      }
+      .menu-links{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;    
+        -webkit-overflow-scrolling: touch;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        .active{
+          font-weight: 600;
+        }
+        li {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          margin-right: 3px;
+          max-width: 35%;
+          background: $primary-color-3;
+          margin: 0 2rem 0 0;
+          width: 100%;
+        }
+      }
+      .social-media-wrapper{
+        margin: 4rem 1rem;
+        display: flex;
+      }
+      .social{
+        flex: 1 1 0px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .social:nth-child(2){
+        text-align: center;
+      }
+      .social:nth-child(3){
+        text-align: right;
+      }
+      @media (min-width: $tablet){
+        .main-content,
+        .social-media-wrapper{
+          max-width: 30vw;
+          margin: 20vh auto 0 20vw;
+        }
+        .menu-links{
+          flex-wrap: wrap;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: 0 6vw;
+          li{
+            max-width: 100%;
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
+        .empty{
+          background: #EA5948;
+          height: 80vh;
+          width: 300px;
+          margin: 10vh 0 0 -12rem;
+          position: absolute;
+        }
+        .hero-content-wrapper{
+          height: 100vh;
+        }
+      }  
+      @media (min-width: $desktop){
+        
+      }
+      @media (min-width: $oversized-desktop){
+        
+      }
+}
