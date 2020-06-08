@@ -246,7 +246,7 @@ input {
   cursor: pointer;
   text-align: left;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .header-2 #menu {
@@ -293,9 +293,18 @@ input {
   display: block;
 }
 
+.header-2 .cart-icon {
+  text-align: right;
+}
+
+.header-2 .profile-image {
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+
 @media (min-width: 768px) {
   .header-2 .logo {
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 20px;
   }
   .header-2 .flex-5-12:first-child {
     max-width: 100%;
