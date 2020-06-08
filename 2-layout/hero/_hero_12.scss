@@ -21,6 +21,7 @@ section.hero-12{
       }
       .min-height{
         min-height: 200px;
+        display: none;
       }
       .counter-align{
         align-self: flex-end;
@@ -38,6 +39,9 @@ section.hero-12{
         .social-icons{
           display: block;
           float: right;
+        }
+        .min-height{
+          display: block;
         }
       }
       @media (min-width: $desktop){

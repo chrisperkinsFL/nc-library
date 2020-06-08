@@ -40,12 +40,13 @@ section.hero-13{
         padding: .78rem 3rem 1rem;
         background: $primary-color-2;
         color: $primary-color-3;
+        text-align: center;
+        width: 100%;
       }
       ::placeholder{
         color: rgb(150, 150, 150);
       }
       input{
-        max-width: 300px;
         width: 100%;
       }
       @media (min-width: $tablet){
@@ -67,6 +68,12 @@ section.hero-13{
           writing-mode: vertical-lr;
           float: right;
           margin: 10rem 2rem;
+        }
+        input{
+          max-width: 300px;
+        }
+        .filled-button{
+          max-width: 150px;
         }
         .follow-us-text{
           transform: rotate(-180deg);

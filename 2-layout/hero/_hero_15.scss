@@ -11,14 +11,14 @@ section.hero-15{
       height: 100%;
       .tagline, 
       h1{
-        padding: 1rem 0;
+        padding: .5rem 0;
       }
       h1{
        font-size: calc(2rem + 4vw);
        line-height: calc(2rem + 4vw);
       }
       .sub-heading{
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
       .scrolling-wrapper-flexbox {
         display: flex;
@@ -30,7 +30,7 @@ section.hero-15{
           flex: 0 0 auto;
           margin-right: 3px;
           max-width: 70%;
-          min-height: 450px;
+          min-height: 40vh;
           background: $primary-color-1;
           margin: 0 2rem 0 0;
           width: 100%;
@@ -49,6 +49,9 @@ section.hero-15{
         display:  inline-block;
         font-size: 2rem;
       }
+      .total-items{
+        margin: 0 2rem 0 0;
+      }
       .progress-bar{
         width: 8rem;
         height: 2px;
@@ -57,7 +60,7 @@ section.hero-15{
         margin: -15px 1rem 0;
       }
       .scroll-arrows{
-        margin: 0 0 0 2rem;
+       
       }
       .material-icons{
         background: $primary-color-2;
