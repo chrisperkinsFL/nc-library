@@ -453,15 +453,43 @@ section.hero-1 .hero-content-wrapper .flex-2-12 .sub-heading {
 
 section.hero-02 {
   background: #EA5948;
-  color: #F1F1F1;
+  color: #333333;
+  min-height: 100vh;
   height: 100%;
   overflow-y: hidden;
+}
+
+section.hero-02 .top-content-wrapper {
+  margin: 1rem;
+}
+
+section.hero-02 .tabs {
+  margin: 2rem 0;
+}
+
+section.hero-02 .tabs li {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+section.hero-02 .bottom-content {
+  margin: 2rem 0;
+}
+
+section.hero-02 .sub-text {
+  display: none;
 }
 
 section.hero-02 .empty-container {
   background: #F1F1F1;
   min-height: 400px;
+  height: 100%;
   width: 100%;
+}
+
+section.hero-02 .reviews-flex .action-link {
+  display: block;
+  margin: 1rem;
 }
 
 section.hero-02 .review-wrapper {
@@ -508,6 +536,59 @@ section.hero-02 .review-wrapper-flexbox {
 
 section.hero-02 .review-wrapper-flexbox::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 768px) {
+  section.hero-02 h1 {
+    font-size: calc(5rem + 1vw);
+  }
+  section.hero-02 .top-content,
+  section.hero-02 .bottom-content {
+    margin: 0 0 0 10vw;
+  }
+  section.hero-02 .top-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 60vw;
+  }
+  section.hero-02 .sub-text {
+    display: block;
+  }
+  section.hero-02 .bottom-content {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 60vw;
+  }
+  section.hero-02 .bottom-content .action-link,
+  section.hero-02 .bottom-content .sub-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  section.hero-02 .empty-container {
+    background: #F1F1F1;
+    min-height: 100vh;
+    height: 100%;
+    width: 40vw;
+  }
+  section.hero-02 .review-wrapper-flexbox {
+    margin: -2rem 0 0 -5vw;
+  }
+  section.hero-02 .reviews-flex {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    max-width: 20vw;
+  }
+  section.hero-02 .reviews-flex .action-link {
+    color: #333333;
+    margin: 2vh 0 10vh -5vw;
+  }
 }
 
 section.hero-3 .hero-content-wrapper {
@@ -2026,3 +2107,4 @@ section.hero-17 .hero-content-wrapper .dot-box {
     display: block;
   }
 }
+/*# sourceMappingURL=main.css.map */

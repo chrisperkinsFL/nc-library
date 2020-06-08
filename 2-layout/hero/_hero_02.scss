@@ -1,15 +1,39 @@
 section.hero-02{
     background: $primary-color-1;
-    color: $primary-color-3;
+    color: $primary-color-2;
+    min-height: 100vh;
     height: 100%;
     overflow-y: hidden;
     .hero-content-wrapper{
-        
+      
+    }
+    .top-content-wrapper{
+      margin: 1rem;
+    }
+      .tabs{
+        margin: 2rem 0 ;
+        li{
+          display: inline-block;
+          margin: 0 1rem 0 0;
+        }
+      }
+      .bottom-content{
+        margin: 2rem 0 ;
+      }
+      .sub-text{
+        display: none;
       }
       .empty-container{
           background: $primary-color-3;
           min-height: 400px;
+          height: 100%;
           width: 100%;
+      }
+      .reviews-flex{
+        .action-link{
+          display: block;
+          margin: 1rem;
+        }
       }
       .review-wrapper{
         background: $primary-color-2;
@@ -29,6 +53,7 @@ section.hero-02{
         flex-wrap: nowrap;
         overflow-x: auto;    
         margin: -2rem 0 0 1rem;  
+
         .review-wrapper {
             background: $primary-color-2;
             color: $primary-color-3;
@@ -49,8 +74,50 @@ section.hero-02{
         }
       }
         @media (min-width: $tablet){
-        
-        }  
+          h1{
+            font-size: calc(5rem + 1vw);
+          }
+          .top-content,
+          .bottom-content{
+            margin: 0 0 0 10vw;
+          }
+          .top-content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 60vw;
+          }
+          .sub-text{
+            display: block;
+          }
+          .bottom-content{
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20vh;
+            display: flex;
+            max-width: 60vw;
+            .action-link,
+            .sub-text{
+              flex: 1;
+            }
+          }
+          .empty-container{
+            background: $primary-color-3;
+            min-height: 100vh;
+            height: 100%;
+            width: 40vw;
+          }  
+          .review-wrapper-flexbox{
+            margin: -2rem 0 0 -5vw;
+          }
+          .reviews-flex{
+            align-self: flex-end;
+            max-width: 20vw;
+            .action-link{
+              color: $primary-color-2;
+              margin: 2vh 0 10vh -5vw;
+            }
+          }
         @media (min-width: $desktop){
           
         }
@@ -58,3 +125,4 @@ section.hero-02{
           
         }
   }
+}
