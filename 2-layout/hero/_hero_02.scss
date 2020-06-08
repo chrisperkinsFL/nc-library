@@ -10,6 +10,9 @@ section.hero-02{
     .top-content-wrapper{
       margin: 1rem;
     }
+    h1{
+      font-size: calc(2rem + 1vw);
+    }
       .tabs{
         margin: 2rem 0 ;
         li{
@@ -25,7 +28,7 @@ section.hero-02{
       }
       .empty-container{
           background: $primary-color-3;
-          min-height: 400px;
+          min-height: 30vh;
           height: 100%;
           width: 100%;
       }

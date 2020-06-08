@@ -472,6 +472,10 @@ section.hero-02 .top-content-wrapper {
   margin: 1rem;
 }
 
+section.hero-02 h1 {
+  font-size: calc(2rem + 1vw);
+}
+
 section.hero-02 .tabs {
   margin: 2rem 0;
 }
@@ -491,7 +495,7 @@ section.hero-02 .sub-text {
 
 section.hero-02 .empty-container {
   background: #F1F1F1;
-  min-height: 400px;
+  min-height: 30vh;
   height: 100%;
   width: 100%;
 }
