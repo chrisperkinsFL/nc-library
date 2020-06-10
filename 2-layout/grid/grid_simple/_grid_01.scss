@@ -1,0 +1,36 @@
+section.grid-01{
+  justify-content: space-around;
+  .grid-item{
+    margin: 1rem 0 2rem;
+    text-align: center;
+  }
+  .grid-block{
+    height: 100%;
+    background: $primary-color-3;
+    overflow: hidden;
+  }
+  img{
+    object-fit: contain;
+    min-height: 100%;
+  }
+  .grid-heading{
+    font-size: 1.25rem;
+    margin: 1rem;
+  }
+  .grid-sub-heading{
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+  }
+  @media (min-width: $tablet){
+    .grid-item{
+      width: 25%;
+      margin: 10px;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}
