@@ -1,0 +1,45 @@
+section.grid-03{
+  justify-content: space-around;
+  .grid-item{
+    margin: 1rem;
+    text-align: left;
+  }
+  .grid-block{
+    min-height: 300px; //remove min-height if not needed.  It is only here so we can see the div blocks in the mockup.
+    background: $primary-color-3;
+    overflow: hidden;
+  }
+  img{
+    object-fit: contain;
+    min-height: 100%;
+  }
+  .grid-text-border{
+    border: 2px solid $primary-color-3;
+    border-top: 0;
+  }
+  .grid-heading{
+    font-size: 1.5rem;
+    padding: 1rem 1rem 0;
+  }
+  .grid-sub-heading{
+    padding: 1rem;
+  }
+  .cta-link{
+    padding: 2rem;
+    display: block;
+    color: $primary-color-1;
+    text-align: center;
+  }
+  @media (min-width: $tablet){
+    .grid-item{
+      width: 25%;
+      margin: 10px;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

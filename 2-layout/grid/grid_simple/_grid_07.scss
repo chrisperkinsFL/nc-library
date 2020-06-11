@@ -1,5 +1,8 @@
-section.grid-01{
+section.grid-07{
   justify-content: space-around;
+  .flex-column-to-row{
+    justify-content: center;
+  }
   .grid-item{
     margin: 1rem 0 2rem;
     text-align: center;
@@ -22,9 +25,17 @@ section.grid-01{
     font-size: 1rem;
     margin: 0 1rem 1rem;
   }
+  .cta-link{
+    display: block;
+    margin: 2rem 0 0;
+    color: $primary-color-1;
+  }
   @media (min-width: $tablet){
+    .grid-heading{
+      font-size: 1.5rem;
+    }
     .grid-item{
-      width: 25%;
+      width: 30%;
       margin: 10px;
     }
   }

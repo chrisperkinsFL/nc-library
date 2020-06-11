@@ -1,8 +1,8 @@
-section.grid-01{
+section.grid-06{
   justify-content: space-around;
   .grid-item{
     margin: 1rem 0 2rem;
-    text-align: center;
+    text-align: left;
   }
   .grid-block{
     height: 100%;
@@ -15,17 +15,15 @@ section.grid-01{
     min-height: 100%;
   }
   .grid-heading{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem;
-  }
-  .grid-sub-heading{
-    font-size: 1rem;
-    margin: 0 1rem 1rem;
   }
   @media (min-width: $tablet){
     .grid-item{
-      width: 25%;
       margin: 10px;
+    }
+    .grid-heading{
+      margin: 1rem 0;
     }
   }
   @media (min-width: $desktop){

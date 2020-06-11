@@ -1,21 +1,30 @@
-section.grid-01{
+section.grid-09{
   justify-content: space-around;
+  .flex-column-to-row{
+    justify-content: center;
+  }
   .grid-item{
     margin: 1rem 0 2rem;
-    text-align: center;
+    text-align: left;
   }
   .grid-block{
     height: 100%;
     min-height: 200px; //remove min-height if not needed.  It is only here so we can see the div blocks in the mockup.
     background: $primary-color-3;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .grid-content-container{
+    margin: 2rem;
   }
   img{
     object-fit: contain;
     min-height: 100%;
   }
   .grid-heading{
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin: 1rem;
   }
   .grid-sub-heading{
@@ -24,7 +33,7 @@ section.grid-01{
   }
   @media (min-width: $tablet){
     .grid-item{
-      width: 25%;
+      width: 50%;
       margin: 10px;
     }
   }

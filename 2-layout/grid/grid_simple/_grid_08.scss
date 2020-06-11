@@ -1,0 +1,71 @@
+section.grid-08{
+  justify-content: space-around;
+  .section-heading{
+    font-size: 2.5rem;
+    margin: 1rem;
+  }
+  .flex-column-to-row{
+    justify-content: center;
+  }
+  .grid-item{
+    margin: 1rem 0 2rem;
+    text-align: left;
+  }
+  .grid-block{
+    height: 100%;
+    min-height: 400px; //remove min-height if not needed.  It is only here so we can see the div blocks in the mockup.
+    background: $primary-color-3;
+    overflow: hidden;
+  }
+  img{
+    object-fit: contain;
+    min-height: 100%;
+  }
+  .grid-heading{
+    font-size: 1.25rem;
+    margin: 1rem;
+  }
+  .grid-sub-heading{
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+  }
+  .caption{
+    margin: 1rem;
+  }
+  @media (min-width: $tablet){
+    .grid-heading,
+    .grid-sub-heading,
+    .caption{
+      margin: 1rem 0;
+    }
+    .grid-heading{
+      width: 80%;
+      font-size: 1.5rem;
+    }
+    .grid-sub-heading{
+      width: 100%;
+    }
+    .grid-item{
+      width: 50%;
+      margin: 10px;
+    }
+    .caption{
+      width: 20%;
+      text-align: right;
+    }
+    .content-flex{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .grid-sub-heading:nth-child(2){ 
+      order: 3; 
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

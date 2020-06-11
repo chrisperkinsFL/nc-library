@@ -1,8 +1,8 @@
-section.grid-01{
+section.grid-02{
   justify-content: space-around;
   .grid-item{
     margin: 1rem 0 2rem;
-    text-align: center;
+    text-align: left;
   }
   .grid-block{
     height: 100%;
@@ -14,18 +14,18 @@ section.grid-01{
     object-fit: contain;
     min-height: 100%;
   }
-  .grid-heading{
-    font-size: 1.25rem;
+  .grid-sub-heading,
+  .caption{
     margin: 1rem;
-  }
-  .grid-sub-heading{
-    font-size: 1rem;
-    margin: 0 1rem 1rem;
   }
   @media (min-width: $tablet){
     .grid-item{
       width: 25%;
       margin: 10px;
+    }
+    .grid-sub-heading,
+    .caption{
+      margin-left: 0;
     }
   }
   @media (min-width: $desktop){
