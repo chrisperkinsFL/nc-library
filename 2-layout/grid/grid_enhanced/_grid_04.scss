@@ -1,6 +1,6 @@
-section.grid-enhanced-01{
+section.grid-enhanced-04{
   .left-flex{
-    flex: 0 50%;
+    flex: 0 70%;
     .flex-child-block{
       height: 100%;
       min-height: 300px;
@@ -13,7 +13,7 @@ section.grid-enhanced-01{
   .right-flex{
     display: flex;
     flex-wrap: wrap;
-    flex: 0 50%;
+    flex: 0 30%;
     .flex-child-block{
       height: 50%;
       min-height: 200px;
@@ -30,11 +30,13 @@ section.grid-enhanced-01{
     .left-flex{
       .flex-child-block{
         margin: 20px 20px 20px 0;
-        min-height: 500px;
+        min-height: 600px;
       }
     }
     .right-flex{
       .flex-child-block{
+        margin: 20px 0 0;
+        width: calc(60% - 40px);
         height: calc(50% - 10px);
       }
     }
