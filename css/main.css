@@ -2559,4 +2559,55 @@ section.grid-09 .grid-sub-heading {
     margin: 10px;
   }
 }
+
+section.grid-enhanced-01 .left-flex {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+}
+
+section.grid-enhanced-01 .left-flex .flex-child-block {
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+  min-width: 200px;
+  background: #EA5948;
+  margin: 20px 0 0;
+}
+
+section.grid-enhanced-01 .right-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+}
+
+section.grid-enhanced-01 .right-flex .flex-child-block {
+  height: 50%;
+  min-height: 200px;
+  background: #333333;
+  margin: 20px 20px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: calc(50% - 40px);
+}
+
+section.grid-enhanced-01 .right-flex .flex-child-block:nth-child(even) {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  section.grid-enhanced-01 .left-flex .flex-child-block {
+    margin: 20px 20px 20px 0;
+    min-height: 500px;
+  }
+  section.grid-enhanced-01 .right-flex .flex-child-block {
+    height: calc(50% - 10px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
