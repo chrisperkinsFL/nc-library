@@ -1,0 +1,43 @@
+section.cta-10{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+    .flex-column-to-row{
+      flex-direction: column-reverse;
+    }
+    .cta-heading{
+      font-size: 3rem;
+    }
+    .cta-feature-content{
+      padding: 0 10vw;
+      align-self: center;
+      ul{
+        margin: 0 0 1rem;
+      }
+      li{
+        display: inline-block;
+        margin: 0 1.5rem 0 0;
+      }
+    }
+    .cta-heading,
+    .cta-description-text{
+      margin: 0 0 1rem;
+    }  
+    .cta-button-wrapper{
+      margin: 2rem 0;
+    }
+    .cta-feature-image{
+      margin: 0 0 2rem;
+    }
+    @media (min-width: $tablet){
+      .flex-column-to-row{
+        flex-direction: row;
+      }
+  
+    }
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}
