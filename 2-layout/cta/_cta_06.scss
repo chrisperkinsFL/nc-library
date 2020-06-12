@@ -1,0 +1,38 @@
+section.cta-06{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column-to-row{
+        margin: 0 auto;
+      }
+      .cta-heading{
+        font-size: 2rem;
+        margin: 0 0 2rem;
+      }
+      .cta-button-wrapper{
+        margin: 2rem 0;
+      }
+      .filled-button-dark-fixed,
+      .unfilled-button-fixed{
+        max-width: 100%;
+        width: 49%;
+      }
+    @media (min-width: $tablet){
+      .cta-heading,
+      .cta-description-text,
+      .cta-button-wrapper{
+        margin: 0 2rem;
+      }
+      .cta-content-wrapper{
+        flex: 2;
+      }
+      .cta-button-wrapper{
+        flex: 1;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

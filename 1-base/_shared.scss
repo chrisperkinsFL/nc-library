@@ -35,6 +35,29 @@ span{
   padding: 1rem 3rem;
 }
 
+.filled-button-dark-fixed{
+  display: inline-block;
+  text-align: center;
+  max-width: 150px;
+  color: $primary-color-3;
+  border: 2px solid $primary-color-2; //the reason we have a border on the filled button is so when it is side by side with the unfille buttons, the heights stay the same.  This may or may not be the best solution
+  background: $primary-color-2;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  height: fit-content;
+}
+
+.unfilled-button-fixed{
+  display: inline-block;
+  text-align: center;
+  max-width: 150px;
+  color: $primary-color-1;
+  border: 2px solid $primary-color-2;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  height: fit-content;
+}
+
 
 input{
   border: 0;

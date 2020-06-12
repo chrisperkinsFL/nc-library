@@ -1,0 +1,60 @@
+section.cta-07{
+    background: $primary-color-3;
+    padding: 2rem 0;
+      .flex-column-to-row{
+        margin: 0 auto;
+      }
+      .content-wrapper{
+        display: flex;
+      }
+      .content-block{
+        background: $primary-color-1;
+        display: inline-block;
+        min-height: 100px;
+        min-width: 100px;
+        height: 100%;
+        margin: 0 2rem 0 0;
+      }
+      .cta-heading{
+        font-size: 2rem;
+        margin: 0 0 1rem;
+      }
+      .cta-button-wrapper{
+        padding: 0 1rem;
+        margin: 2rem 0;
+      }
+      .filled-button-dark-fixed,
+      .unfilled-button-fixed{
+        max-width: 100%;
+        width: 100%;
+      }
+      .unfilled-button-fixed{
+        margin: 1rem 0 0;
+      }
+    @media (min-width: $tablet){
+      margin: 2rem 0;
+      .filled-button-dark-fixed,
+      .unfilled-button-fixed{
+        max-width: 100%;
+        width: 49%;
+        padding: 1rem 0;
+      }
+      .cta-heading,
+      .cta-description-text,
+      .cta-button-wrapper{
+        margin: 0 2rem;
+      }
+      .content-wrapper{
+        flex: 2;
+      }
+      .cta-button-wrapper{
+        flex: 1;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

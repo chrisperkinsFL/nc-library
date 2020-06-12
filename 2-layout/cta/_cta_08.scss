@@ -1,0 +1,59 @@
+section.cta-08{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+    .cta-heading{
+      font-size: 2rem;
+    }
+    .cta-heading,
+    .cta-description-text{
+      margin: 0 0 1rem;
+    }
+    .cta-button-wrapper{
+      margin: 2rem 0 1rem;
+    }
+    .cta-description-text-bottom{
+      margin: .5rem 0 0 0;
+    }
+    .cta-content-wrapper,
+    .cta-feature-content{
+      flex: 1;
+    }
+    .cta-feature-content{
+      margin: 2rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .feature-wrapper{
+      margin: 0 0 2rem;
+      flex: 0 50%;
+    }
+    .feature-heading{
+      font-size: 1.25rem;
+      margin: 0 0 .5rem;
+    }
+    .filled-button-dark-fixed,
+    .unfilled-button-fixed{
+      max-width: unset;
+      padding: 1rem 0;
+      width: 49.5%;
+    }    
+    @media (min-width: $tablet){
+      .cta-button-wrapper{
+        max-width: 400px;
+      }
+      .cta-content-wrapper,
+      .cta-feature-content{
+        margin: 0;
+        padding: 0 2rem;
+      }
+      .feature-content{
+        width: 80%;
+      }
+    }
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}
