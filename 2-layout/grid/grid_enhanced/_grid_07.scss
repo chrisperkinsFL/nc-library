@@ -1,0 +1,34 @@
+section.grid-enhanced-07{
+  width: 100%;
+  .flex-child-block{
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    background: $primary-color-3;
+    &:first-child{
+      margin-top:20px;
+    }
+    &:nth-child(2){
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (min-width: $tablet){
+    .flex-child-block{
+      &:first-child{
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+      &:nth-child(2){
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}
