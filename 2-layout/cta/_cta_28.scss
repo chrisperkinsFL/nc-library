@@ -1,0 +1,33 @@
+section.cta-28{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column{
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .tagline{
+        margin: 0 0 2rem;
+      }
+      .cta-heading{
+        font-size: 2rem;
+        margin: 0 0 2rem;
+      }
+      .filled-button-dark-fixed{
+        margin: 4rem auto 0;
+      }
+    @media (min-width: $tablet){
+      .cta-heading{
+        font-size: calc(2rem + 1vw);
+      }
+      .filled-button-dark-fixed{
+        margin: 2rem auto 0;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

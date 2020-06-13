@@ -1,0 +1,50 @@
+section.cta-24{
+    background: $primary-color-3;
+    padding: 2rem 0;
+    .flex-column{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .cta-heading{
+      font-size: 2rem;
+    }
+    .cta-feature-content{
+      flex: 1;
+      align-self: center;
+      padding: 1rem;
+    }
+    .cta-heading,
+    .cta-description-text{
+      margin: 0 0 1rem;
+    }  
+    .cta-button-wrapper{
+      margin: 3rem 0 0;
+    }
+    .cta-feature-image{
+      flex: 1;
+      margin: 0 0 2rem;
+      
+    }
+    .action-link{
+      margin: 0 0 0 2rem;
+      color: $primary-color-2;
+    }
+    @media (min-width: $tablet){
+      .cta-feature-content{
+        max-width: 900px;
+      }
+      .cta-feature-image img{
+        max-height: 500px;
+      }
+      .flex-column-to-row{
+        flex-direction: row-reverse;
+        padding: 0 4vw;
+      }
+    }
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

@@ -1,0 +1,57 @@
+section.cta-23{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column{
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .cta-heading{
+        font-size: calc(2rem + 1vw);
+        margin: 1rem 0 0;
+      }
+      .cta-button-wrapper{
+        margin: 4rem 0 0;
+      }
+
+      .feature-container{
+        margin: 2rem auto;
+      }
+      .feature-content-wrapper{
+        margin: 0 0 2rem;
+      }
+      .feature-heading{
+        font-size: 1.25rem;
+        margin: 1rem 0 .5rem;
+      }
+      .material-icons{
+        font-size: 3rem;
+      }
+    @media (min-width: $tablet){
+      padding: 6vw;
+      .flex-column{
+        max-width: 1000px;
+      }
+      .cta-heading{
+        font-size: calc(3rem + 1vw);
+      }
+      .feature-heading{
+        margin-top: 0;
+      }
+      .feature-container{
+        max-width: 1200px;
+        margin: 6rem auto 0;
+      }
+      .feature-content-wrapper{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto 0 1rem;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}
