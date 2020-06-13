@@ -1,4 +1,4 @@
-section.cta-10{
+section.cta-17{
     background: $primary-color-3;
     padding: 2rem 1rem;
     .flex-column-to-row{
@@ -29,11 +29,11 @@ section.cta-10{
     }
     @media (min-width: $tablet){
       .flex-column-to-row{
-        flex-direction: row;
+        flex-direction: row-reverse;
         padding: 0 4vw;
       }
       .cta-feature-content{
-        padding: 0 8vw 0 0;
+        padding: 0 0 0 8vw;
       }
   
     }

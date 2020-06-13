@@ -1,6 +1,9 @@
-section.cta-09{
+section.cta-16{
     background: $primary-color-3;
     padding: 2rem 0;
+    .flex-column-to-row{
+      flex-direction: column-reverse;
+    }
     .cta-heading{
       font-size: 2rem;
     }
@@ -46,6 +49,9 @@ section.cta-09{
       color: $primary-color-2;
     } 
     @media (min-width: $tablet){
+      .flex-column-to-row{
+        flex-direction: row-reverse;
+      }
       .cta-feature-image,
       .cta-feature-content{
         margin: 0;
