@@ -1,0 +1,36 @@
+section.content-07{
+    background: $primary-color-3;
+    padding: 4rem 1rem;
+      .flex-column-to-row,
+      .flex-row{
+        max-width: 1000px;
+        margin: 0 auto;
+        place-content: space-between;
+      }
+      .flex-item-1,
+      .flex-item-2{
+        flex: 1;
+        margin: 2rem 0 0;
+      }
+      .flex-item-3{
+        margin: 2rem 0 0;
+        flex: 1.5;
+      }
+    @media (min-width: $tablet){
+      .flex-item-1{
+        padding-right: 2rem;
+      }
+      .flex-item-2{
+        padding: 0 2rem;
+      }
+      .flex-item-3{
+        padding: 0 0 0 4rem;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

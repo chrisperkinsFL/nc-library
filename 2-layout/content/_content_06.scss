@@ -1,0 +1,33 @@
+section.content-06{
+    background: $primary-color-3;
+    padding: 4rem 1rem;
+      .flex-column-to-row{
+        max-width: 1200px;
+        margin: 0 auto;
+        place-content: space-between;
+      }
+      .flex-item-1,
+      .flex-item-2{
+        margin: 2rem 0 0;
+      }
+      
+    @media (min-width: $tablet){
+      .flex-item-1,
+      .flex-item-2{
+        margin: 0 1rem;
+      }
+      .left,
+      .right{
+        flex: 1;
+      }
+      .left{
+        margin-right: 4vw;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

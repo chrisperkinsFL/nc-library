@@ -1,0 +1,17 @@
+section.content-01{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column{
+        max-width: 750px;
+        margin: 0 auto;
+      }
+    @media (min-width: $tablet){
+
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}
