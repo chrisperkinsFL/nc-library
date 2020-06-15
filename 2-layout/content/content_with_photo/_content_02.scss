@@ -1,0 +1,55 @@
+section.content-with-photo-02{
+  background: $primary-color-3;
+  padding: 2rem 0;
+    .flex-column-to-row{
+      margin: 0 auto;
+      .flex-item{
+        img{
+          padding: 0 0 0 10vw;
+        }
+        &:nth-child(2){
+          padding: 0 1rem;
+        }
+        span{
+          margin: 1rem 0;
+        }
+        a{
+          font-weight: bold;
+          margin: 2rem 0 0;
+        }
+      }
+      .flex-row{
+        justify-content: space-between;
+        .column{
+          width: 45%;
+        }
+      }
+    }
+  @media (min-width: $tablet){
+    .flex-column-to-row{
+      .flex-item{
+        img{
+          padding-left: 0;
+        }
+        &:nth-child(1){
+          order: 2;
+          flex: 1;
+          width: 50%;
+        }
+        &:nth-child(2){
+          flex: 1;
+          order: 1;
+          margin: 0 5vw 0 10vw;
+          width:50%;
+          align-self: center;
+        } 
+      }   
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

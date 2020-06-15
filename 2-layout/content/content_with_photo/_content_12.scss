@@ -1,0 +1,35 @@
+section.content-with-photo-12{
+  background: $primary-color-3;
+  padding: 2rem 0;
+  .flex-column-to-row{
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+    .flex-item{
+      flex: 1;
+      margin: 1rem 0;
+    }
+    .placeholder{
+      background: $primary-color-2;
+      width: 100%;
+      min-height: 20vh;
+    }
+  .flex-column{
+    .column-item{
+      flex: 1;
+    }
+  }
+    
+  @media (min-width: $tablet){
+    .flex-item{
+      margin: 1rem;
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

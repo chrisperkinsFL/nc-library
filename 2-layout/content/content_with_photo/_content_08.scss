@@ -1,0 +1,53 @@
+section.content-with-photo-06{
+  background: $primary-color-3;
+    .flex-column-to-row{
+      margin: 0 auto;
+      .flex-item{
+        flex: 1;
+        &:first-child{
+          padding: 1rem;
+        }
+        img{
+          margin: 2rem auto;
+        }
+        span{
+          margin: 1rem 0;
+        }
+        a{
+          font-weight: bold;
+          margin: 2rem 0 0;
+        }
+        .m-font-size{
+          margin-top: 0;
+        }
+        .xm-font-size,
+        .s-font-size{
+          margin: 0;
+        }
+        .tagline{
+          margin: 2rem 0 1rem;
+        }
+      }
+    }
+  @media (min-width: $tablet){
+    .flex-item{
+      padding: 1rem;
+      &:first-child{
+        flex: 1;
+        align-self: center;
+      }
+      .content-wrapper,
+      img{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }  
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

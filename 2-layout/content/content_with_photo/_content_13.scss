@@ -1,0 +1,47 @@
+section.content-with-photo-13{
+  background: $primary-color-3;
+  padding: 2rem 0;
+    .flex-column-to-row{
+      margin: 0 auto;
+    }
+      .flex-item{
+        img{
+          padding: 0 0 0 10vw;
+        }
+        &:nth-child(2){
+          padding: 0 1rem;
+        }
+        span{
+          margin: 1rem 0;
+        }
+        a{
+          font-weight: bold;
+          margin: 2rem 0 0;
+      }
+    }
+  @media (min-width: $tablet){
+    .flex-item{
+      .content-wrapper{
+        margin: 0 auto;
+        width: 70%;
+      }
+      &:nth-child(1){
+        flex: 1;
+      }
+      &:nth-child(2){
+        flex: 1;
+        margin: 0 auto;
+        align-self: center;
+      } 
+      img{
+        padding-left: 0;
+      }   
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

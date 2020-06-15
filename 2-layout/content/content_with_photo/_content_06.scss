@@ -1,0 +1,43 @@
+section.content-with-photo-06{
+  background: $primary-color-3;
+    .flex-column-to-row{
+      margin: 0 auto;
+      .flex-item{
+        flex: 1;
+        &:first-child{
+          padding: 1rem;
+        }
+        span{
+          margin: 1rem 0;
+        }
+        a{
+          font-weight: bold;
+          margin: 2rem 0 0;
+        }
+      }
+    }
+    .flex-row{
+      justify-content: space-between;
+        .column{
+          width: 45%;
+        }
+      }
+  @media (min-width: $tablet){
+    .flex-item{
+      &:first-child{
+        flex: 1;
+        align-self: center;
+      }
+      .content-wrapper{
+        width: 80%;
+        margin: 0 auto;
+      }    
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

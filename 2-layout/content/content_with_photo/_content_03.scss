@@ -1,0 +1,69 @@
+section.content-with-photo-03{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+    .flex-column-to-row{
+      margin: 0 auto;
+      .flex-item{
+        img{
+          width: 70%;
+        }
+        &:nth-child(2){
+          padding: 0 1rem;
+        }
+        span{
+          margin: 1rem 0;
+        }
+        a{
+          font-weight: bold;
+          margin: 2rem 0 0;
+        }
+      }
+      .flex-row{
+        .column-item{
+          display: inline-block;
+          width: 90%;
+          margin: 1.25rem 0 0 ;
+          padding: 0 0 0 1rem;
+        }
+        .material-icons{
+
+          font-size: 1.5rem;
+          vertical-align: top;
+          margin: 1.25rem 0 0;
+        }
+      }
+    }
+  @media (min-width: $tablet){
+    .flex-column-to-row{
+      padding: 2vw 5vw;
+      .flex-item{
+        &:nth-child(1){
+          order: 2;
+          flex: 1;
+          width: 50%;
+        }
+        &:nth-child(2){
+          flex: 1;
+          order: 1;
+          margin: 0 auto;
+          width: 50%;
+          align-self: center;
+        } 
+        img{
+          width: 100%;
+          float: right;
+          padding-left: 0;
+        }
+        .content-wrapper{
+          padding-right: 6vw;
+        }
+      }   
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

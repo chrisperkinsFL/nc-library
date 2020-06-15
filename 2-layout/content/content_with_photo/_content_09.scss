@@ -1,0 +1,44 @@
+section.content-with-photo-09{
+  background: $primary-color-3;
+  padding: 2rem 0;
+  text-align: center;
+    .flex-column-to-row{
+      margin: 0 auto;
+      .flex-item{
+        span{
+          margin: 1rem 0;
+        }
+        .content-wrapper{
+          padding: 0 1rem; 
+        }
+      }
+      a{
+        padding: 2rem 1rem;
+        display: inline-block;
+      }
+    }
+  @media (min-width: $tablet){
+    .flex-column-to-row{
+      padding: 2vw 5vw;
+      .flex-item{
+        flex: 1;
+        align-self: center;
+        img{
+          margin: 0;
+          float: right;
+          padding-left: 0;
+        }
+        .content-wrapper{
+          margin: 0 auto;
+          width: 80%;
+        }
+      }   
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}
