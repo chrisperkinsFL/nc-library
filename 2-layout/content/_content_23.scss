@@ -1,0 +1,42 @@
+section.content-23{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column{
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .l-font-size{
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      .flex-column-to-row{
+        max-width: 1000px;
+        margin: 2rem auto
+      }
+      .flex-item{
+        background-color: $primary-color-2;
+        color: $primary-color-3;
+        margin: .25rem;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .s-font-size{
+        margin: 1rem 0 0;
+      }
+      .action-link{
+        display: block;
+        margin: 3rem 1rem 0;
+      }
+    @media (min-width: $tablet){
+      .flex-item{
+        padding: 6rem 3rem;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

@@ -1,0 +1,31 @@
+section.content-25{
+    background: $primary-color-3;
+    padding: 2rem 1rem;
+      .flex-column-to-row{
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .flex-item{
+        margin: 0 0 2rem;
+      }
+      .m-font-size{
+        margin: 0 0 .5rem;
+      }
+      .action-link{
+        display: block;
+        margin: 1rem 0 0;
+        color: $primary-color-2;
+      }
+    @media (min-width: $tablet){
+      .flex-item{
+        margin: 0 4vw 0 0;
+      }
+    }  
+    @media (min-width: $desktop){
+        
+    }
+    @media (min-width: $oversized-desktop){
+        
+    }
+}

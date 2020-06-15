@@ -152,6 +152,11 @@ input {
   width: 300px;
 }
 
+.action-link {
+  display: block;
+  color: #333333;
+}
+
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5422,3 +5427,205 @@ section.content-22 .action-link {
   display: block;
   margin: 3rem 1rem 0;
 }
+
+section.content-23 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-23 .flex-column {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.content-23 .l-font-size {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+section.content-23 .flex-column-to-row {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+section.content-23 .flex-item {
+  background-color: #333333;
+  color: #F1F1F1;
+  margin: .25rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+section.content-23 .s-font-size {
+  margin: 1rem 0 0;
+}
+
+section.content-23 .action-link {
+  display: block;
+  margin: 3rem 1rem 0;
+}
+
+@media (min-width: 768px) {
+  section.content-23 .flex-item {
+    padding: 6rem 3rem;
+  }
+}
+
+section.content-24 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-24 .flex-column-to-row {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1000px;
+}
+
+section.content-24 .line-break {
+  height: 2px;
+  width: 100%;
+  background: #333333;
+  margin: 1rem 0 2rem;
+}
+
+section.content-24 .s-font-size {
+  margin: 1rem 0;
+}
+
+section.content-24 .action-link {
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  section.content-24 .line-break {
+    min-height: 20px;
+    height: auto;
+    width: 4px;
+    margin: 0 4rem;
+  }
+}
+
+section.content-25 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-25 .flex-column-to-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.content-25 .flex-item {
+  margin: 0 0 2rem;
+}
+
+section.content-25 .m-font-size {
+  margin: 0 0 .5rem;
+}
+
+section.content-25 .action-link {
+  display: block;
+  margin: 1rem 0 0;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  section.content-25 .flex-item {
+    margin: 0 4vw 0 0;
+  }
+}
+
+section.content-26 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-26 .flex-column {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.content-26 .flex-column .flex-item {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+}
+
+section.content-26 .flex-column-to-row {
+  max-width: 700px;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+section.content-26 .flex-column-to-row .flex-item {
+  padding: 1rem;
+}
+
+section.content-27 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-27 .flex-column-to-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.content-27 .flex-item {
+  margin: 0 0 2rem;
+}
+
+section.content-27 .m-font-size {
+  margin: 0 0 .5rem;
+}
+
+section.content-27 .action-link {
+  display: block;
+  margin: 1rem 0 0;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  section.content-27 .flex-item {
+    margin: 0 4vw 0 0;
+  }
+  section.content-27 .flex-column-to-row:nth-child(2) {
+    margin: 3rem auto 0;
+  }
+}
+
+section.content-28 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.content-28 .flex-column-to-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.content-28 .flex-item {
+  margin: 0 0 2rem;
+}
+
+section.content-28 .m-font-size {
+  margin: 0 0 .5rem;
+}
+
+section.content-28 .action-link {
+  display: block;
+  margin: 1rem 0 0;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  section.content-28 .flex-item {
+    margin: 0 4vw 0 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

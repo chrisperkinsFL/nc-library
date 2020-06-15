@@ -1,0 +1,35 @@
+section.content-24{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+    .flex-column-to-row{
+      margin: 0 auto;
+      text-align: center;
+      max-width: 1000px;
+    }
+    .line-break{
+      height: 2px;
+      width: 100%;
+      background: $primary-color-2;
+      margin: 1rem 0 2rem;
+    }
+    .s-font-size{
+      margin: 1rem 0;
+    }
+    .action-link{
+      margin: 2rem 0;
+    }
+  @media (min-width: $tablet){
+    .line-break{
+      min-height:20px;
+      height: auto;
+      width: 4px;
+      margin: 0 4rem;
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}
