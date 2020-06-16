@@ -3,6 +3,7 @@ section.content-with-photo-02{
   padding: 2rem 0;
     .flex-column-to-row{
       margin: 0 auto;
+    }
       .flex-item{
         img{
           padding: 0 0 0 10vw;
@@ -24,9 +25,7 @@ section.content-with-photo-02{
           width: 45%;
         }
       }
-    }
   @media (min-width: $tablet){
-    .flex-column-to-row{
       .flex-item{
         img{
           padding-left: 0;
@@ -34,17 +33,14 @@ section.content-with-photo-02{
         &:nth-child(1){
           order: 2;
           flex: 1;
-          width: 50%;
         }
         &:nth-child(2){
           flex: 1;
           order: 1;
           margin: 0 5vw 0 10vw;
-          width:50%;
           align-self: center;
         } 
       }   
-    }
   }  
   @media (min-width: $desktop){
       

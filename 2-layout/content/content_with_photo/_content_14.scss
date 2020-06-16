@@ -1,4 +1,4 @@
-section.content-with-photo-01{
+section.content-with-photo-14{
   background: $primary-color-3;
   padding: 2rem 0;
     .flex-column-to-row{
@@ -19,19 +19,26 @@ section.content-with-photo-01{
           margin: 2rem 0 0;
         }
       }
-  @media (min-width: $tablet){
-    .flex-item{
-      &:nth-child(1){
-        order: 2;
-        flex: 2;
+      .flex-row{
+        justify-content: space-between;
+        .column{
+          width: 45%;
+        }
       }
-      &:nth-child(2){
-        flex: 1;
-        order: 1;
-        margin: 0 0 0 10vw;
-        align-self: center;
-      }    
-    }
+  @media (min-width: $tablet){
+      .flex-item{
+        img{
+          padding-left: 0;
+        }
+        &:nth-child(1){
+          flex: 1;
+        }
+        &:nth-child(2){
+          flex: 1;
+          margin: 0 5vw 0 10vw;
+          align-self: center;
+        } 
+      }   
   }  
   @media (min-width: $desktop){
       

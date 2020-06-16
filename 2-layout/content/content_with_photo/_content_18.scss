@@ -1,15 +1,12 @@
-section.content-with-photo-01{
+section.content-with-photo-18{
   background: $primary-color-3;
-  padding: 2rem 0;
     .flex-column-to-row{
       margin: 0 auto;
     }
       .flex-item{
-        img{
-          padding: 0 0 0 10vw;
-        }
+        flex: 1;
         &:nth-child(2){
-          padding: 0 1rem;
+          padding: 1rem;
         }
         span{
           margin: 1rem 0;
@@ -19,17 +16,21 @@ section.content-with-photo-01{
           margin: 2rem 0 0;
         }
       }
+    .flex-row{
+      justify-content: space-between;
+        .column{
+          width: 45%;
+        }
+      }
   @media (min-width: $tablet){
     .flex-item{
-      &:nth-child(1){
-        order: 2;
-        flex: 2;
-      }
       &:nth-child(2){
         flex: 1;
-        order: 1;
-        margin: 0 0 0 10vw;
         align-self: center;
+      }
+      .content-wrapper{
+        width: 80%;
+        margin: 0 auto;
       }    
     }
   }  

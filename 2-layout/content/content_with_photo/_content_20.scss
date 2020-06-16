@@ -1,11 +1,11 @@
-section.content-with-photo-08{
+section.content-with-photo-20{
   background: $primary-color-3;
     .flex-column-to-row{
       margin: 0 auto;
     }
       .flex-item{
         flex: 1;
-        &:first-child{
+        &:nth-child(2){
           padding: 1rem;
         }
         img{
@@ -30,9 +30,12 @@ section.content-with-photo-08{
         }
       }
   @media (min-width: $tablet){
+    .flex-column-to-row{
+      padding: 2vw;
+    }
     .flex-item{
       padding: 1rem;
-      &:first-child{
+      &:nth-child(2){
         flex: 1;
         align-self: center;
       }

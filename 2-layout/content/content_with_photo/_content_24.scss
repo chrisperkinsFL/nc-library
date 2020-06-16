@@ -1,0 +1,27 @@
+section.content-with-photo-24{
+  background: $primary-color-3;
+  padding: 1rem;
+    .flex-column-to-row{
+      margin: 0 auto;
+    }
+    span{
+      margin: 1rem 0;
+    }
+    .flex-4-12{
+      margin: 0 0 4rem;
+      text-align: center;
+      align-self: center;
+    }
+    
+  @media (min-width: $tablet){
+    .flex-4-12{
+      margin: 0 3vw;
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}
