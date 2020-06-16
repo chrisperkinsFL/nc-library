@@ -16,7 +16,7 @@ JS folder should be where all the JavaScript lives (feel free to add sub directo
 
 All of the HTML will be under the 'markup' folder and should follow the current structure. 
 
-When creating a new HTML section,  we want the parent to have a unique classname so the local styles won't be overridden.  (example. _hero_01.html starts with  '<section class="hero-1">' and it's corresponding SCSS file wraps all of it's styles in section.hero-1{ }
+When creating a new HTML section,  we want the parent to have a unique classname so the local styles won't be overridden.  (example. _hero_01.html starts with  section class="hero-1 and it's corresponding SCSS file wraps all of it's styles in section.hero-1{ }
 
 The numbers in the file name follow from top to bottom the designs that Haitham sent over.
 
