@@ -1,0 +1,41 @@
+section.features-07{
+  background: $primary-color-3;
+  padding: 1rem;
+    .flex-column-to-row{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .line-break{
+      height: 2px;
+      width: 100%;
+      background: $primary-color-2;
+      margin: 2rem 0;
+    }
+    span{
+      margin: .5rem 0;
+    }
+    .action-link{
+      margin: 1rem 0 0;
+    }
+    .material-icons{
+      font-size: 3rem;
+      margin: 0 1rem 0 0;
+    }
+  @media (min-width: $tablet){
+    .flex-column-to-row{
+      padding: 4vw;
+    }
+    .line-break{
+      min-height:20px;
+      height: auto;
+      width: 4px;
+      margin: 0 4rem;
+    }
+  }  
+  @media (min-width: $desktop){
+      
+  }
+  @media (min-width: $oversized-desktop){
+      
+  }
+}

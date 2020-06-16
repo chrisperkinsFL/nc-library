@@ -1,0 +1,35 @@
+section.features-02{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+  .flex-column{
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  span,
+  .material-icons{
+    display: block;
+    text-align: center;
+  }
+  span{
+    margin: 2rem 0 0;
+  }
+  .flex-column-to-row{
+    margin: 2rem 0;
+  }
+  .material-icons{
+    font-size: 4rem;
+  }
+
+  @media (min-width: $tablet){   
+    .flex-column-to-row{
+      margin: 4rem 0 2rem;
+      span{
+        margin: 0 1.5rem;
+      }
+    }
+  }  
+  @media (min-width: $desktop){   
+    }
+  @media (min-width: $oversized-desktop){   
+    }
+}

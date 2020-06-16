@@ -1,0 +1,49 @@
+section.features-14{
+  background: $primary-color-3;
+  padding: 4rem 1rem;
+  .flex-column-to-row{
+    margin: 0 auto;
+    max-width: 800px;
+    flex-wrap: wrap;
+  }
+  span,
+  .material-icons{
+    margin: 0;
+    display: block;
+  }
+  .material-icons{
+    margin: 0 0 1rem;
+    font-size: 3rem;
+  }
+  .flex-item{
+    padding: 0 1rem;
+  }
+  .flex-row{
+    margin: 1.5rem 0;
+  }
+  .flex-column{
+    span{
+      margin: 0 0 1rem;
+    }
+    text-align: center;
+    margin: 0rem 0 1rem;
+
+  }
+  .action-link{
+    margin: 1.25rem 0 0;
+  }
+  .xm-font-size{
+    margin: 0 0 .25rem;
+  }
+
+  @media (min-width: $tablet){  
+    .flex-row{
+      padding: 0 1rem;
+      flex: 0 0 50%;
+    }  
+  }  
+  @media (min-width: $desktop){   
+  }
+  @media (min-width: $oversized-desktop){   
+  }
+}

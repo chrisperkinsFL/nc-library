@@ -1,0 +1,36 @@
+section.features-10{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+  .flex-column-to-row{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .flex-item{
+    background: $primary-color-2;
+    color: $primary-color-3;
+    margin: .45rem;
+    padding: 2rem;
+    flex: 0 48%;
+  }
+  .material-icons{
+    font-size: 3rem;
+  }
+  .action-link{
+    margin: 1.25rem 0 0;
+  }
+  span{
+    margin: 1rem 0 0;
+  }
+
+  @media (min-width: $tablet){  
+    .flex-item{
+      padding: 4rem;
+    }  
+  }  
+  @media (min-width: $desktop){   
+  }
+  @media (min-width: $oversized-desktop){   
+  }
+}
