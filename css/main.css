@@ -7468,58 +7468,96 @@ section.features-14 .xm-font-size {
 
 section.features-15 {
   background: #F1F1F1;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 section.features-15 .flex-column-to-row {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-section.features-15 span,
-section.features-15 .material-icons {
+section.features-15 span {
   margin: 0;
   display: block;
 }
 
+section.features-15 .video-link {
+  margin: 2rem 0 0;
+}
+
 section.features-15 .material-icons {
-  margin: 0 0 1rem;
-  font-size: 3rem;
+  vertical-align: middle;
 }
 
-section.features-15 .flex-item {
-  padding: 0 1rem;
-}
-
-section.features-15 .flex-row {
-  margin: 1.5rem 0;
-}
-
-section.features-15 .flex-column {
-  text-align: center;
-  margin: 0rem 0 1rem;
-}
-
-section.features-15 .flex-column span {
-  margin: 0 0 1rem;
-}
-
-section.features-15 .action-link {
-  margin: 1.25rem 0 0;
+section.features-15 .flex-6-12 {
+  padding: 1rem;
 }
 
 section.features-15 .xm-font-size {
   margin: 0 0 .25rem;
 }
 
+section.features-15 .flex-item {
+  padding: 1rem 0;
+}
+
 @media (min-width: 768px) {
-  section.features-15 .flex-row {
-    padding: 0 1rem;
+  section.features-15 .flex-item {
+    padding: 0 1rem 1rem;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+  }
+  section.features-15 .flex-item:nth-child(3) {
+    margin: 2rem 0 0;
+  }
+  section.features-15 .flex-item:nth-child(4) {
+    margin: 2rem 0 0;
+  }
+}
+
+section.features-16 {
+  background: #F1F1F1;
+  padding: 2rem 1rem;
+}
+
+section.features-16 .flex-column-to-row {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section.features-16 .flex-row-to-column span {
+  padding: 0 2rem 0 0;
+}
+
+section.features-16 .flex-6-12 {
+  margin: 1rem 0;
+}
+
+section.features-16 .material-icons {
+  font-size: 3rem;
+}
+
+section.features-16 .xm-font-size {
+  margin: 1rem 0;
+}
+
+section.features-16 .active {
+  color: #EA5948;
+}
+
+@media (min-width: 768px) {
+  section.features-16 .menu-item {
+    font-size: calc(3.5rem + 1vw);
+    line-height: calc(5rem + 1vw);
+  }
+  section.features-16 .xm-font-size {
+    font-size: 2rem;
+  }
+  section.features-16 .material-icons {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

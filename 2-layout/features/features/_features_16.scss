@@ -1,0 +1,42 @@
+section.features-16{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+  .flex-column-to-row{
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .flex-row-to-column{
+    span{
+      padding: 0 2rem 0 0;
+    }
+  }
+  .flex-6-12{
+    margin: 1rem 0;
+  }
+  .material-icons{
+    font-size: 3rem;
+  }
+  .xm-font-size{
+    margin: 1rem 0;
+  }
+  .active{
+    color: $primary-color-1;
+  }
+
+  @media (min-width: $tablet){ 
+    .menu-item{
+      font-size: calc(3.5rem + 1vw); 
+      line-height: calc(5rem + 1vw)
+    }
+    .xm-font-size{
+      font-size: 2rem;
+    }
+    .material-icons{
+      font-size: 4rem;
+    } 
+  }  
+  @media (min-width: $desktop){   
+  }
+  @media (min-width: $oversized-desktop){   
+  }
+}
