@@ -1,0 +1,49 @@
+section.products-01{
+  background: $primary-color-3;
+  .flex-row{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .m-font-size{
+    margin: .5rem 0 0;
+  }
+  .grid-item{
+    width: 100%;
+    min-height: 200px;
+    flex-basis: calc(50% - 1.5rem);
+    margin: .75rem 0 0;
+    margin-bottom: 1rem;
+    &:last-child{
+      display: none;
+    }
+  }
+  .grid-img{
+    width: 100%;
+    min-height: 200px;
+    background: $primary-color-1;
+  }
+  .material-icons,
+  .rating{
+    display: inline-block;
+    font-size: .9rem;
+    vertical-align: middle;
+    margin: .5rem 0 0;
+  }
+  @media (min-width: $tablet){
+    .flex-row{
+      flex-wrap: unset;
+    }
+    .grid-item{
+      margin: .75rem;
+      &:last-child{
+        display: block;
+      }
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}
