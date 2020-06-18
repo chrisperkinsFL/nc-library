@@ -1,0 +1,51 @@
+section.features-with-photo-13{
+  background: $primary-color-3;
+  .flex-column-to-row{
+    margin: 0 auto;
+  }
+  .material-icons{
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .flex-6-12{
+    align-self: center;
+    &:nth-child(2){
+      padding: 1rem;
+    }
+  }
+  .s-font-size{
+    margin: 1rem 0 0;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: cover;
+  }
+  .flex-row-to-column{
+    margin: 1rem 0 0;
+  }
+  .icon-section{
+    margin: 1rem 0;
+  }
+
+  @media (min-width: $tablet){
+    .flex-6-12{
+      flex-basis: 0 0 50%;
+    }
+    .flex-row-to-column{
+      padding: 0 2rem 0 0;
+    }
+    .icon-text{
+      margin: 0;
+    }
+  }  
+  @media (min-width: $desktop){ 
+    .content-wrapper{
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+  @media (min-width: $oversized-desktop){   
+  }
+}

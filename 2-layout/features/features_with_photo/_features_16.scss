@@ -1,0 +1,41 @@
+section.features-with-photo-16{
+  background: $primary-color-3;
+  padding: 2rem 1rem;
+  .flex-column-to-row{
+    margin: 0 auto;
+  }
+  .material-icons{
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .flex-6-12{
+    align-self: center;
+  }
+  .flex-row-to-column{
+    margin: 1rem 0;
+  }
+  .m-font-size{
+    margin: 0 0 .25rem;
+  }
+
+
+  @media (min-width: $tablet){
+    .flex-column-to-row{
+      flex-wrap: wrap;
+    }
+    .flex-6-12{
+      margin: 4vw;
+      flex-basis: 0 0 50%;
+    }
+    .flex-row-to-column{
+      padding: 1rem;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+  }  
+  @media (min-width: $desktop){ 
+ 
+  }
+  @media (min-width: $oversized-desktop){   
+  }
+}
