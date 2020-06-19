@@ -1,6 +1,6 @@
 .header-2{
   color: $primary-color-3;
-  background: $primary-color-1;
+  background: $primary-color-2;
   width: 100%;
   position: relative;
     .flex-row{
@@ -8,19 +8,23 @@
       height: 60px;
       position: relative;
     }
-    .flex-1-12 {
-      max-width: 50px;
+    .nav-logo{
+      display: none;
     }
-    .profile-image img{
-      width: 35px;
-      vertical-align: middle;
-      cursor: pointer;
+    .nav-logo-text{
+      display: block;
     }
     .flex-5-12,
+    .flex-6-12,
+    .flex-4-12,
     .flex-1-12{
       align-self: center;
     }
-    .flex-5-12:first-child{
+    .flex-1-12{
+      max-width: fit-content;
+      width: 100%;
+    }
+    .flex-4-12{
       max-width: 60px;
     }
     ul{
@@ -67,27 +71,88 @@
     .open{
       display: block;
     }
-    .material-icons{
-      vertical-align: middle;
-    }
     .open-profile{
       display: block;
     }
+    .profile-image img{
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .shopping-cart-icon-wrapper{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 2px solid $primary-color-3;
+      text-align: center;
+      justify-content: center;
+    }
+    .material-icons{
+      vertical-align: middle;
+      font-size: 1.5rem;
+      align-self: center;
+    }
+    .cart-item{
+      position: absolute;
+      background: #ea5948;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      font-size: 10px;
+      margin: -.25rem 1rem;
+      text-align: center;
+      font-weight: $bold;
+    }
+    .number{
+      margin: 1px;
+    }
     .cart-icon{
       text-align: right;
+      margin: 0 .75rem 0 0;
     }
     .profile-image{
       text-align: right;
       margin: 0 20px 0 0;
     }
+    .shopping-cart-icon{
+      font-size: 1rem;
+    }
+    .search-bar{
+      display: none;
+    }
+  
   @media (min-width: $tablet){
+    input{
+      width: 18vw;
+    }
+    .flex-4-12{
+      max-width: 100%;
+    }
+    .flex-1-12 {
+     
+    }
+    .nav-logo{
+      display: inline-block;
+      width: auto;
+      height: 25px;
+      vertical-align: middle;
+    }
+    .search-bar{
+      margin: 0 0  0 20px;
+      height: 30px
+    }
+    .nav-logo img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .nav-logo-text{
+      display: none;
+    }
     .logo{
       margin: 0 0 0 20px;
     }
-    .flex-5-12:first-child{
+    .flex-6-12{
       max-width: 100%;
       max-width: 100%;
-      min-width: 400px;
     }
     #profile{
       min-height: auto;
@@ -128,7 +193,9 @@
       display: block !important;
       position: relative;
       margin: 0;
-      text-align: right;
+      text-align: center;
+      background: none;
+      min-width: 350px;
     }
     #menu li{
       display: inline-block;
@@ -137,10 +204,10 @@
       font-weight: 600;
     }
     //reordering the navigation for desktop
-    .flex-5-12:nth-child(1) { order: 2; text-align: center;}
-    .flex-5-12:nth-child(2) { order: 1; }
-    .flex-1-12:nth-child(3) { order: 3; text-align: right; margin: 0;}
-    .flex-1-12:nth-child(4) { order: 4; text-align: right; margin: 0 1rem 0 0;}
+    .flex-4-12:nth-child(1) { order: 2; text-align: center; margin: 0 2rem 0 0;}
+    .flex-6-12:nth-child(2) { order: 1; }
+    .flex-1-12:nth-child(3) { order: 3; text-align: right; margin: 0 20px 0 0;}
+    .flex-1-12:nth-child(4) { order: 4; text-align: right; margin: 0 20px 0 0;}
     #menu{
         display: block;
         min-height: auto;
@@ -152,5 +219,11 @@
     .max-width-header{
       max-width: $oversized-desktop;
       margin: 0 auto;
+    }
+
+    @media (min-width: $desktop){
+      .search-bar{
+        display: inline-block;
+      }    
     }
 }

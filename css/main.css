@@ -289,7 +289,7 @@ input {
 
 .header-2 {
   color: #F1F1F1;
-  background: #EA5948;
+  background: #333333;
   width: 100%;
   position: relative;
 }
@@ -299,24 +299,31 @@ input {
   position: relative;
 }
 
-.header-2 .flex-1-12 {
-  max-width: 50px;
+.header-2 .nav-logo {
+  display: none;
 }
 
-.header-2 .profile-image img {
-  width: 35px;
-  vertical-align: middle;
-  cursor: pointer;
+.header-2 .nav-logo-text {
+  display: block;
 }
 
 .header-2 .flex-5-12,
+.header-2 .flex-6-12,
+.header-2 .flex-4-12,
 .header-2 .flex-1-12 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.header-2 .flex-5-12:first-child {
+.header-2 .flex-1-12 {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+}
+
+.header-2 .flex-4-12 {
   max-width: 60px;
 }
 
@@ -371,16 +378,53 @@ input {
   display: block;
 }
 
-.header-2 .material-icons {
-  vertical-align: middle;
-}
-
 .header-2 .open-profile {
   display: block;
 }
 
+.header-2 .profile-image img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-2 .shopping-cart-icon-wrapper {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #F1F1F1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-2 .material-icons {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header-2 .cart-item {
+  position: absolute;
+  background: #ea5948;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  margin: -.25rem 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header-2 .number {
+  margin: 1px;
+}
+
 .header-2 .cart-icon {
   text-align: right;
+  margin: 0 .75rem 0 0;
 }
 
 .header-2 .profile-image {
@@ -388,14 +432,44 @@ input {
   margin: 0 20px 0 0;
 }
 
+.header-2 .shopping-cart-icon {
+  font-size: 1rem;
+}
+
+.header-2 .search-bar {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .header-2 input {
+    width: 18vw;
+  }
+  .header-2 .flex-4-12 {
+    max-width: 100%;
+  }
+  .header-2 .nav-logo {
+    display: inline-block;
+    width: auto;
+    height: 25px;
+    vertical-align: middle;
+  }
+  .header-2 .search-bar {
+    margin: 0 0  0 20px;
+    height: 30px;
+  }
+  .header-2 .nav-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .header-2 .nav-logo-text {
+    display: none;
+  }
   .header-2 .logo {
     margin: 0 0 0 20px;
   }
-  .header-2 .flex-5-12:first-child {
+  .header-2 .flex-6-12 {
     max-width: 100%;
     max-width: 100%;
-    min-width: 400px;
   }
   .header-2 #profile {
     min-height: auto;
@@ -434,7 +508,9 @@ input {
     display: block !important;
     position: relative;
     margin: 0;
-    text-align: right;
+    text-align: center;
+    background: none;
+    min-width: 350px;
   }
   .header-2 #menu li {
     display: inline-block;
@@ -442,13 +518,14 @@ input {
     font-size: 1rem;
     font-weight: 600;
   }
-  .header-2 .flex-5-12:nth-child(1) {
+  .header-2 .flex-4-12:nth-child(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     text-align: center;
+    margin: 0 2rem 0 0;
   }
-  .header-2 .flex-5-12:nth-child(2) {
+  .header-2 .flex-6-12:nth-child(2) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -458,14 +535,14 @@ input {
         -ms-flex-order: 3;
             order: 3;
     text-align: right;
-    margin: 0;
+    margin: 0 20px 0 0;
   }
   .header-2 .flex-1-12:nth-child(4) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
     text-align: right;
-    margin: 0 1rem 0 0;
+    margin: 0 20px 0 0;
   }
   .header-2 #menu {
     display: block;
@@ -476,6 +553,12 @@ input {
 .header-2 .max-width-header {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .header-2 .search-bar {
+    display: inline-block;
+  }
 }
 
 section.hero-1 .hero-content-wrapper {
