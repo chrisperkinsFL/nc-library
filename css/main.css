@@ -8553,6 +8553,119 @@ section.products-01 .rating {
   }
 }
 
+section.products-02 {
+  background: #F1F1F1;
+}
+
+section.products-02 .flex-row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.products-02 .m-font-size {
+  margin: .5rem 0 0;
+}
+
+section.products-02 .grid-item {
+  width: 100%;
+  min-height: 200px;
+  -ms-flex-preferred-size: calc(50% - 1.5rem);
+      flex-basis: calc(50% - 1.5rem);
+  margin: .75rem 0 0;
+  margin-bottom: 1rem;
+}
+
+section.products-02 .grid-item:last-child {
+  display: none;
+}
+
+section.products-02 .grid-img {
+  width: 100%;
+  min-height: 200px;
+  background: #EA5948;
+}
+
+section.products-02 .grid-item .flex-row {
+  margin: .5rem 0 0;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+section.products-02 .grid-item .flex-row span {
+  margin: 0 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+  section.products-02 .flex-row {
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  section.products-02 .grid-item {
+    margin: .75rem;
+  }
+  section.products-02 .grid-item:last-child {
+    display: block;
+  }
+}
+
+section.products-05 {
+  background: #F1F1F1;
+}
+
+section.products-05 .flex-row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.products-05 .m-font-size {
+  margin: .5rem 0 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1rem;
+}
+
+section.products-05 .grid-item {
+  width: 100%;
+  -ms-flex-preferred-size: calc(50% - 1.5rem);
+      flex-basis: calc(50% - 1.5rem);
+  margin: 0 0 0;
+  margin-bottom: .5rem;
+}
+
+section.products-05 .grid-img {
+  width: 100%;
+  min-height: 200px;
+  background: #EA5948;
+}
+
+section.products-05 .grid-item .flex-row {
+  margin: .5rem 0 0;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+section.products-05 .grid-item .flex-row span {
+  margin: 0 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+  section.products-05 .flex-row {
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  section.products-05 .grid-item {
+    margin: .75rem;
+  }
+}
+
 footer.footer-main {
   background: #333333;
   color: #F1F1F1;
@@ -8600,4 +8713,3 @@ footer.footer-main .flex-item {
     margin: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */

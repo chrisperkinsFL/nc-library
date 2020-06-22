@@ -1,0 +1,45 @@
+section.products-05{
+  background: $primary-color-3;
+  .flex-row{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .m-font-size{
+    margin: .5rem 0 0;
+    align-self: flex-end;
+    padding: 1rem;
+  }
+  .grid-item{
+    width: 100%;
+    flex-basis: calc(50% - 1.5rem);
+    margin: 0 0 0;
+    margin-bottom: .5rem;
+  }
+  .grid-img{
+    width: 100%;
+    min-height: 200px;
+    background: $primary-color-1;
+  }
+
+  .grid-item .flex-row{
+    margin: .5rem 0 0;
+    justify-content: unset;
+    span{
+      margin: 0 1rem 0 0;
+    }
+  }
+  @media (min-width: $tablet){
+    .flex-row{
+      flex-wrap: unset;
+    }
+    .grid-item{
+      margin: .75rem;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}
