@@ -1,0 +1,33 @@
+section.products-08{
+  text-align: center;
+  .flex-column-to-row{
+    span{
+      margin: .75rem 0;
+    }
+    .action-link{
+      margin: 1.5rem 0;
+    }
+  }
+  .flex-6-12{
+    background: $primary-color-3;
+    padding: 2rem;
+    margin: 1rem 1rem 0;
+    min-height: 30vh;
+  }
+
+  @media (min-width: $tablet){
+    .flex-6-12{
+      min-height: 60vh;
+    }
+    .content-wrapper{
+      margin: 0 auto;
+      max-width: 70%;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

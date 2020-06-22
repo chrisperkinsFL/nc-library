@@ -1,0 +1,38 @@
+section.products-09{
+  text-align: center;
+  .flex-row{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .flex-12-12{
+    margin: 2vh 0;
+  }
+  .flex-column-to-row{
+    span{
+      margin: .75rem 0;
+    }
+    .action-link{
+      margin: 1.5rem 0;
+    }
+  }
+  .flex-6-12{
+    margin: 1rem 1rem 0;
+  }
+  .grid-img{
+    min-width: 100%;
+    min-height: 300px;
+    background: $primary-color-2;;
+  }
+
+  @media (min-width: $tablet){
+    .grid-img{
+      min-height: 500px;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

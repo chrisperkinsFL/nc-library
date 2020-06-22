@@ -1,0 +1,40 @@
+section.products-16{
+    margin: 0 auto 1rem;
+    max-width: 800px;
+  .flex-column-to-row{
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+  .grid-card{
+    max-width: 100%;
+    margin: 1rem 0 0  0;
+    padding: 2rem 2rem 0;
+    background: $primary-color-3;
+    text-align: center;
+    line-height: 0;
+    img{
+      object-fit: cover;
+      margin: 4rem 0 0;
+      width: 50%;
+    }
+  }
+  .s-font-size{
+    margin: 1rem 0 0;
+  }
+
+  @media (min-width: $tablet){
+    .grid-column-wrapper{
+      width: 50%;
+    }
+    .grid-card{
+      max-width: 100%;
+      margin: 1rem .5rem 0;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

@@ -1,0 +1,30 @@
+section.products-13{
+  text-align: left;  span{
+    margin: 0 0 1rem;
+  }
+  .flex-column{
+    margin: 0 auto;
+  }
+  .flex-12-12{
+    background: $primary-color-3;
+  }
+  .grid-img{
+    min-width: 100%;
+  }
+  .content-wrapper{
+    text-align: center;
+    margin: 10vh 6vh;
+  }
+
+  @media (min-width: $tablet){
+    .content-wrapper{
+      width: 33%;
+    }
+  }
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}
