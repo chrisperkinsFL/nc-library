@@ -1,5 +1,9 @@
 section.grid-09{
   justify-content: space-around;
+  color: $primary-color-2;
+  span{
+    display: block;
+  }
   .flex-column-to-row{
     justify-content: center;
   }

@@ -1,5 +1,8 @@
 section.grid-01{
   justify-content: space-around;
+  span{
+    display: block;
+  }
   .grid-item{
     margin: 1rem 0 2rem;
     text-align: center;

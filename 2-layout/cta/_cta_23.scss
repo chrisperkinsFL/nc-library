@@ -1,5 +1,4 @@
 section.cta-23{
-    background: $primary-color-3;
     padding: 2rem 1rem;
       .flex-column{
         max-width: 750px;
@@ -7,7 +6,6 @@ section.cta-23{
         text-align: center;
       }
       .cta-heading{
-        font-size: calc(2rem + 1vw);
         margin: 1rem 0 0;
       }
       .cta-button-wrapper{
@@ -21,7 +19,6 @@ section.cta-23{
         margin: 0 0 2rem;
       }
       .feature-heading{
-        font-size: 1.25rem;
         margin: 1rem 0 .5rem;
       }
       .material-icons{
@@ -31,9 +28,6 @@ section.cta-23{
       padding: 6vw;
       .flex-column{
         max-width: 1000px;
-      }
-      .cta-heading{
-        font-size: calc(3rem + 1vw);
       }
       .feature-heading{
         margin-top: 0;

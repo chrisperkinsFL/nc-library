@@ -1,6 +1,6 @@
 section.cta-07{
-    background: $primary-color-3;
     padding: 2rem 0;
+    margin: 2rem 0;
       .flex-column-to-row{
         margin: 0 auto;
       }
@@ -32,7 +32,6 @@ section.cta-07{
         margin: 1rem 0 0;
       }
     @media (min-width: $tablet){
-      margin: 2rem 0;
       .filled-button-dark-fixed,
       .unfilled-button-fixed{
         max-width: 100%;

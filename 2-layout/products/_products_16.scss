@@ -1,6 +1,9 @@
 section.products-16{
     margin: 0 auto 1rem;
     max-width: 800px;
+    span{
+      display: block
+    }  
   .flex-column-to-row{
     margin: 0 auto;
     flex-wrap: wrap; 

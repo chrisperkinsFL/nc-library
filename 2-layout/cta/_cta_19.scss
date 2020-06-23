@@ -1,11 +1,7 @@
 section.cta-19{
-    background: $primary-color-3;
     padding: 2rem 1rem;
     .flex-column-to-row{
       flex-direction: column-reverse;
-    }
-    .cta-heading{
-      font-size: 3rem;
     }
     .cta-feature-content{
       flex: 1;
@@ -32,6 +28,7 @@ section.cta-19{
     .action-link{
       margin: 0 0 0 2rem;
       color: $primary-color-2;
+      display: inline-block;
     }
     @media (min-width: $tablet){
       .flex-column-to-row{

@@ -4,6 +4,9 @@ section.grid-03{
     margin: 1rem;
     text-align: left;
   }
+  span{
+    display: block;
+  }
   .grid-block{
     min-height: 300px; //remove min-height if not needed.  It is only here so we can see the div blocks in the mockup.
     background: $primary-color-3;

@@ -1,5 +1,5 @@
 section.products-01{
-  background: $primary-color-3;
+  color: $primary-color-2;
   .flex-row{
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,6 +16,9 @@ section.products-01{
     &:last-child{
       display: none;
     }
+  }
+  span{
+    display: block;
   }
   .grid-img{
     width: 100%;

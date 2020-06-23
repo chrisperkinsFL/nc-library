@@ -4,9 +4,6 @@ section.cta-12{
     .flex-column-to-row{
       flex-direction: column-reverse;
     }
-    .cta-heading{
-      font-size: 3rem;
-    }
     .cta-feature-content{
       flex: 1;
       align-self: center;
@@ -30,6 +27,7 @@ section.cta-12{
       margin: 0 0 2rem;
     }
     .action-link{
+      display: inline-block;
       margin: 0 0 0 2rem;
       color: $primary-color-2;
     }

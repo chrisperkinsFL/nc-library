@@ -1,18 +1,14 @@
 section.cta-11{
-    background: $primary-color-3;
     padding: 2rem 1rem;
     .flex-column-to-row{
       flex-direction: column-reverse;
     }
-    .cta-heading{
-      font-size: 3rem;
-    }
     .icon-text{
-      font-size: 1rem;
       margin: 0 0 1rem;
+      display: block;
     }
     .material-icons{
-      font-size:2rem;
+      font-size: 2rem;
       vertical-align: middle;
       margin: 0 1rem 0 0;
     }

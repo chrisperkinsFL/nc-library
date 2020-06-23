@@ -49,34 +49,41 @@ h6 {
 .xs-font-size {
   font-size: .9rem;
   line-height: 1.25rem;
+  display: block;
 }
 
 .s-font-size {
   font-size: 1.1rem;
   line-height: 1.6rem;
+  display: block;
 }
 
 .m-font-size {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  display: block;
 }
 
 .xm-font-size {
   font-size: 1.5rem;
   line-height: 2rem;
+  display: block;
 }
 
 .l-font-size {
   font-size: 2rem;
   line-height: 2.5rem;
+  display: block;
 }
 
 .xl-font-size {
   font-size: 3rem;
   line-height: 3.5rem;
+  display: block;
 }
 
 body {
+  background-color: #F1F1F1;
   font-family: "Lato", sans-serif;
   color: #333333;
 }
@@ -92,17 +99,13 @@ a {
 
 .max-width {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1140px;
 }
 
 .flip-vertical {
   display: inline;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-}
-
-span {
-  display: block;
 }
 
 .filled-button {
@@ -367,6 +370,7 @@ nav .profile-image {
 
 nav .shopping-cart-icon {
   font-size: 1rem;
+  line-height: 2rem;
 }
 
 nav .search-bar {
@@ -375,7 +379,7 @@ nav .search-bar {
 
 @media (min-width: 768px) {
   nav input {
-    width: 18vw;
+    width: 100%;
   }
   nav .flex-4-12 {
     max-width: 100%;
@@ -386,9 +390,9 @@ nav .search-bar {
     height: 25px;
     vertical-align: middle;
   }
-  nav .search-bar {
-    margin: 0 0  0 20px;
-    height: 30px;
+  nav .search-wrapper {
+    display: inline-block;
+    max-width: 100%;
   }
   nav .nav-logo img {
     max-width: 100%;
@@ -483,6 +487,8 @@ nav .max-width-header {
 @media (min-width: 992px) {
   nav .search-bar {
     display: inline-block;
+    margin: 0 0  0 20px;
+    height: 30px;
   }
 }
 
@@ -491,6 +497,10 @@ section.hero-1 .hero-content-wrapper {
   padding: 1rem 1rem 0;
   background: #333333;
   color: #F1F1F1;
+}
+
+section.hero-1 .hero-content-wrapper span {
+  display: block;
 }
 
 section.hero-1 .hero-content-wrapper .hero-content-container {
@@ -553,6 +563,10 @@ section.hero-02 {
   min-height: 100vh;
   height: 100%;
   overflow-y: hidden;
+}
+
+section.hero-02 span {
+  display: block;
 }
 
 section.hero-02 .top-content-wrapper {
@@ -755,6 +769,10 @@ section.hero-4 .hero-content-wrapper .hero-content-container {
   justify-content: center;
 }
 
+section.hero-4 .hero-content-wrapper span {
+  display: block;
+}
+
 section.hero-4 .hero-content-wrapper .tagline {
   text-transform: uppercase;
 }
@@ -813,6 +831,10 @@ section.hero-05 {
   background: #EA5948;
   color: #333333;
   overflow-y: hidden;
+}
+
+section.hero-05 span {
+  display: block;
 }
 
 section.hero-05 .hero-content-wrapper {
@@ -922,6 +944,10 @@ section.hero-06 {
   min-height: 100vh;
   height: 100%;
   overflow-y: hidden;
+}
+
+section.hero-06 span {
+  display: block;
 }
 
 section.hero-06 .top {
@@ -1039,6 +1065,10 @@ section.hero-7 .hero-content-wrapper {
   height: 100%;
 }
 
+section.hero-7 .hero-content-wrapper span {
+  display: block;
+}
+
 section.hero-7 .hero-content-wrapper .hero-content-container {
   overflow-y: hidden;
   padding: 1rem;
@@ -1122,6 +1152,10 @@ section.hero-08 {
   min-height: 100vh;
   height: 100%;
   overflow-y: hidden;
+}
+
+section.hero-08 span {
+  display: block;
 }
 
 section.hero-08 .cta-container {
@@ -1255,6 +1289,10 @@ section.hero-09 .hero-content-wrapper {
   padding: 1rem;
 }
 
+section.hero-09 span {
+  display: block;
+}
+
 section.hero-09 h1 {
   font-size: calc(2rem + 1vw);
 }
@@ -1332,6 +1370,10 @@ section.hero-10 {
   background: #333333;
   color: #F1F1F1;
   height: 100vh;
+}
+
+section.hero-10 span {
+  display: block;
 }
 
 section.hero-10 .hero-content-wrapper {
@@ -1418,6 +1460,10 @@ section.hero-11 {
 section.hero-11 .hero-content-wrapper {
   overflow-y: hidden;
   padding: 1rem;
+}
+
+section.hero-11 .hero-content-wrapper span {
+  display: block;
 }
 
 section.hero-11 .hero-content-wrapper .tagline {
@@ -1511,6 +1557,10 @@ section.hero-12 .hero-content-wrapper {
   padding: 1rem;
 }
 
+section.hero-12 .hero-content-wrapper span {
+  display: block;
+}
+
 section.hero-12 .hero-content-wrapper h1 {
   font-size: 3rem;
 }
@@ -1577,6 +1627,10 @@ section.hero-13 .hero-content-wrapper {
   height: 100%;
   overflow-y: hidden;
   padding: 1rem;
+}
+
+section.hero-13 span {
+  display: block;
 }
 
 section.hero-13 .flex-column-to-row {
@@ -1681,6 +1735,10 @@ section.hero-14 {
   min-height: 400px;
   overflow-y: hidden;
   padding: 1rem;
+}
+
+section.hero-14 span {
+  display: block;
 }
 
 section.hero-14 .hero-content-wrapper {
@@ -1789,6 +1847,10 @@ section.hero-15 .text-blurb {
   display: none;
 }
 
+section.hero-15 span {
+  display: block;
+}
+
 section.hero-15 .hero-content-wrapper {
   min-height: 100vh;
   height: 100%;
@@ -1894,6 +1956,10 @@ section.hero-15 .hero-content-wrapper .material-icons {
 section.hero-16 {
   background: #F1F1F1;
   color: #333333;
+}
+
+section.hero-16 span {
+  display: block;
 }
 
 section.hero-16 .hero-content-wrapper {
@@ -2023,6 +2089,10 @@ section.hero-17 {
   color: #F1F1F1;
 }
 
+section.hero-17 span {
+  display: block;
+}
+
 section.hero-17 .hero-content-wrapper {
   overflow-y: hidden;
 }
@@ -2136,6 +2206,10 @@ section.grid-01 {
   justify-content: space-around;
 }
 
+section.grid-01 span {
+  display: block;
+}
+
 section.grid-01 .grid-item {
   margin: 1rem 0 2rem;
   text-align: center;
@@ -2172,6 +2246,10 @@ section.grid-01 .grid-sub-heading {
 
 section.grid-02 {
   justify-content: space-around;
+}
+
+section.grid-02 span {
+  display: block;
 }
 
 section.grid-02 .grid-item {
@@ -2216,6 +2294,10 @@ section.grid-03 .grid-item {
   text-align: left;
 }
 
+section.grid-03 span {
+  display: block;
+}
+
 section.grid-03 .grid-block {
   min-height: 300px;
   background: #F1F1F1;
@@ -2257,6 +2339,10 @@ section.grid-03 .cta-link {
 
 section.grid-05 {
   justify-content: space-around;
+}
+
+section.grid-05 span {
+  display: block;
 }
 
 section.grid-05 .grid-item {
@@ -2306,6 +2392,10 @@ section.grid-06 .grid-item {
   text-align: left;
 }
 
+section.grid-06 span {
+  display: block;
+}
+
 section.grid-06 .grid-block {
   height: 100%;
   min-height: 200px;
@@ -2334,6 +2424,10 @@ section.grid-06 .grid-heading {
 
 section.grid-07 {
   justify-content: space-around;
+}
+
+section.grid-07 span {
+  display: block;
 }
 
 section.grid-07 .flex-column-to-row {
@@ -2385,6 +2479,10 @@ section.grid-07 .cta-link {
 
 section.grid-08 {
   justify-content: space-around;
+}
+
+section.grid-08 span {
+  display: block;
 }
 
 section.grid-08 .section-heading {
@@ -2460,6 +2558,11 @@ section.grid-08 .caption {
 
 section.grid-09 {
   justify-content: space-around;
+  color: #333333;
+}
+
+section.grid-09 span {
+  display: block;
 }
 
 section.grid-09 .flex-column-to-row {
@@ -2811,6 +2914,10 @@ section.grid-enhanced-08 .flex-row {
   justify-content: center;
 }
 
+section.grid-enhanced-08 span {
+  display: block;
+}
+
 section.grid-enhanced-08 .flex-child-block {
   height: 100%;
   min-height: 300px;
@@ -2863,6 +2970,10 @@ section.grid-enhanced-08 .grid-heading {
 
 section.grid-enhanced-09 {
   margin: 3rem 0;
+}
+
+section.grid-enhanced-09 span {
+  display: block;
 }
 
 section.grid-enhanced-09 .flex-row {
@@ -2946,7 +3057,6 @@ section.grid-enhanced-10 .flex-child-block {
 }
 
 section.cta-01 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -2956,12 +3066,11 @@ section.cta-01 .flex-column {
 }
 
 section.cta-01 .cta-heading {
-  font-size: 2rem;
+  text-align: left;
   margin: 0 0 2rem;
 }
 
 section.cta-02 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -2970,7 +3079,6 @@ section.cta-02 .flex-column-to-row {
 }
 
 section.cta-02 .cta-heading {
-  font-size: 2rem;
   margin: 0 0 2rem;
 }
 
@@ -2987,7 +3095,6 @@ section.cta-02 .filled-button-dark-fixed {
 }
 
 section.cta-03 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -2996,7 +3103,6 @@ section.cta-03 .flex-column-to-row {
 }
 
 section.cta-03 .cta-heading {
-  font-size: 1.5rem;
   margin: 0 0 1rem;
 }
 
@@ -3013,7 +3119,6 @@ section.cta-03 .filled-button-dark-fixed {
 }
 
 section.cta-04 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3023,7 +3128,6 @@ section.cta-04 .flex-column {
 }
 
 section.cta-04 .cta-heading {
-  font-size: 2rem;
   margin: 2rem 0;
 }
 
@@ -3034,7 +3138,6 @@ section.cta-04 .action-link {
 }
 
 section.cta-05 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3043,7 +3146,6 @@ section.cta-05 .flex-column-to-row {
 }
 
 section.cta-05 .cta-heading {
-  font-size: 1.5rem;
   margin: 0 0 1rem;
 }
 
@@ -3073,7 +3175,6 @@ section.cta-05 .line-break {
 }
 
 section.cta-06 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3082,8 +3183,7 @@ section.cta-06 .flex-column-to-row {
 }
 
 section.cta-06 .cta-heading {
-  font-size: 2rem;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
 section.cta-06 .cta-button-wrapper {
@@ -3100,19 +3200,20 @@ section.cta-06 .unfilled-button-fixed {
   section.cta-06 .cta-heading,
   section.cta-06 .cta-description-text,
   section.cta-06 .cta-button-wrapper {
-    margin: 0 2rem;
+    margin: 1rem 2rem 0;
   }
   section.cta-06 .cta-content-wrapper {
     flex: 2;
   }
   section.cta-06 .cta-button-wrapper {
+    align-self: center;
     flex: 1;
   }
 }
 
 section.cta-07 {
-  background: #F1F1F1;
   padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 section.cta-07 .flex-column-to-row {
@@ -3153,9 +3254,6 @@ section.cta-07 .unfilled-button-fixed {
 }
 
 @media (min-width: 768px) {
-  section.cta-07 {
-    margin: 2rem 0;
-  }
   section.cta-07 .filled-button-dark-fixed,
   section.cta-07 .unfilled-button-fixed {
     max-width: 100%;
@@ -3176,12 +3274,7 @@ section.cta-07 .unfilled-button-fixed {
 }
 
 section.cta-08 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
-}
-
-section.cta-08 .cta-heading {
-  font-size: 2rem;
 }
 
 section.cta-08 .cta-heading,
@@ -3214,7 +3307,6 @@ section.cta-08 .feature-wrapper {
 }
 
 section.cta-08 .feature-heading {
-  font-size: 1.25rem;
   margin: 0 0 .5rem;
 }
 
@@ -3240,12 +3332,7 @@ section.cta-08 .unfilled-button-fixed {
 }
 
 section.cta-09 {
-  background: #F1F1F1;
   padding: 2rem 0;
-}
-
-section.cta-09 .cta-heading {
-  font-size: 2rem;
 }
 
 section.cta-09 .cta-heading {
@@ -3278,7 +3365,6 @@ section.cta-09 .active {
 }
 
 section.cta-09 .feature-heading {
-  font-size: 1.25rem;
   margin: 0 0 .5rem;
 }
 
@@ -3295,6 +3381,7 @@ section.cta-09 .cta-button-wrapper {
 }
 
 section.cta-09 .action-link {
+  display: inline-block;
   margin: 0  0 0 2rem;
   color: #333333;
 }
@@ -3310,16 +3397,11 @@ section.cta-09 .action-link {
 }
 
 section.cta-10 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
 section.cta-10 .flex-column-to-row {
   flex-direction: column-reverse;
-}
-
-section.cta-10 .cta-heading {
-  font-size: 3rem;
 }
 
 section.cta-10 .cta-feature-content {
@@ -3359,7 +3441,6 @@ section.cta-10 .cta-feature-image {
 }
 
 section.cta-11 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3367,13 +3448,9 @@ section.cta-11 .flex-column-to-row {
   flex-direction: column-reverse;
 }
 
-section.cta-11 .cta-heading {
-  font-size: 3rem;
-}
-
 section.cta-11 .icon-text {
-  font-size: 1rem;
   margin: 0 0 1rem;
+  display: block;
 }
 
 section.cta-11 .material-icons {
@@ -3430,10 +3507,6 @@ section.cta-12 .flex-column-to-row {
   flex-direction: column-reverse;
 }
 
-section.cta-12 .cta-heading {
-  font-size: 3rem;
-}
-
 section.cta-12 .cta-feature-content {
   flex: 1;
   align-self: center;
@@ -3463,6 +3536,7 @@ section.cta-12 .cta-feature-image {
 }
 
 section.cta-12 .action-link {
+  display: inline-block;
   margin: 0 0 0 2rem;
   color: #333333;
 }
@@ -3480,10 +3554,6 @@ section.cta-12 .action-link {
 section.cta-13 {
   background: #F1F1F1;
   padding: 2rem 1rem;
-}
-
-section.cta-13 .cta-heading {
-  font-size: 3rem;
 }
 
 section.cta-13 .cta-feature-content {
@@ -3514,7 +3584,6 @@ section.cta-13 .cta-feature-image {
 }
 
 section.cta-14 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3523,7 +3592,6 @@ section.cta-14 .flex-column-to-row {
 }
 
 section.cta-14 .cta-heading {
-  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -3566,12 +3634,7 @@ section.cta-14 .unfilled-button-fixed {
   }
 }
 
-section.cta-15 {
-  background: #F1F1F1;
-}
-
 section.cta-15 .cta-heading {
-  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -3614,16 +3677,11 @@ section.cta-15 .cta-feature-content {
 }
 
 section.cta-16 {
-  background: #F1F1F1;
   padding: 2rem 0;
 }
 
 section.cta-16 .flex-column-to-row {
   flex-direction: column-reverse;
-}
-
-section.cta-16 .cta-heading {
-  font-size: 2rem;
 }
 
 section.cta-16 .cta-heading {
@@ -3656,7 +3714,6 @@ section.cta-16 .active {
 }
 
 section.cta-16 .feature-heading {
-  font-size: 1.25rem;
   margin: 0 0 .5rem;
 }
 
@@ -3673,6 +3730,7 @@ section.cta-16 .cta-button-wrapper {
 }
 
 section.cta-16 .action-link {
+  display: inline-block;
   margin: 0  0 0 2rem;
   color: #333333;
 }
@@ -3691,16 +3749,11 @@ section.cta-16 .action-link {
 }
 
 section.cta-17 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
 section.cta-17 .flex-column-to-row {
   flex-direction: column-reverse;
-}
-
-section.cta-17 .cta-heading {
-  font-size: 3rem;
 }
 
 section.cta-17 .cta-feature-content {
@@ -3740,7 +3793,6 @@ section.cta-17 .cta-feature-image {
 }
 
 section.cta-18 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3748,13 +3800,10 @@ section.cta-18 .flex-column-to-row {
   flex-direction: column-reverse;
 }
 
-section.cta-18 .cta-heading {
-  font-size: 3rem;
-}
-
 section.cta-18 .icon-text {
   font-size: 1rem;
   margin: 0 0 1rem;
+  display: block;
 }
 
 section.cta-18 .material-icons {
@@ -3804,21 +3853,17 @@ section.cta-18 .unfilled-button-fixed {
   }
   section.cta-18 .icon-text {
     display: inline-block;
-    margin: 1rem 3rem 0 0;
+    margin: 1rem 0;
+    padding: 0 1.5rem 0 0;
   }
 }
 
 section.cta-19 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
 section.cta-19 .flex-column-to-row {
   flex-direction: column-reverse;
-}
-
-section.cta-19 .cta-heading {
-  font-size: 3rem;
 }
 
 section.cta-19 .cta-feature-content {
@@ -3852,6 +3897,7 @@ section.cta-19 .cta-feature-image {
 section.cta-19 .action-link {
   margin: 0 0 0 2rem;
   color: #333333;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -3868,16 +3914,11 @@ section.cta-19 .action-link {
 }
 
 section.cta-20 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
 section.cta-20 .flex-column-to-row {
   flex-direction: column-reverse;
-}
-
-section.cta-20 .cta-heading {
-  font-size: 3rem;
 }
 
 section.cta-20 .cta-feature-content {
@@ -3891,7 +3932,7 @@ section.cta-20 .tagline {
 }
 
 section.cta-20 .cta-button-wrapper {
-  margin: 6rem 0 2rem;
+  margin: 2rem 0 2rem;
 }
 
 section.cta-20 .cta-feature-image {
@@ -3913,7 +3954,6 @@ section.cta-20 .cta-feature-image {
 }
 
 section.cta-21 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -3922,7 +3962,6 @@ section.cta-21 .flex-column-to-row {
 }
 
 section.cta-21 .cta-heading {
-  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -3965,16 +4004,11 @@ section.cta-21 .unfilled-button-fixed {
   }
 }
 
-section.cta-22 {
-  background: #F1F1F1;
-}
-
 section.cta-22 .flex-column-to-row {
   flex-direction: column-reverse;
 }
 
 section.cta-22 .cta-heading {
-  font-size: 2rem;
   margin: 0 0 1rem;
 }
 
@@ -4017,7 +4051,6 @@ section.cta-22 .cta-feature-content {
 }
 
 section.cta-23 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -4028,7 +4061,6 @@ section.cta-23 .flex-column {
 }
 
 section.cta-23 .cta-heading {
-  font-size: calc(2rem + 1vw);
   margin: 1rem 0 0;
 }
 
@@ -4045,7 +4077,6 @@ section.cta-23 .feature-content-wrapper {
 }
 
 section.cta-23 .feature-heading {
-  font-size: 1.25rem;
   margin: 1rem 0 .5rem;
 }
 
@@ -4059,9 +4090,6 @@ section.cta-23 .material-icons {
   }
   section.cta-23 .flex-column {
     max-width: 1000px;
-  }
-  section.cta-23 .cta-heading {
-    font-size: calc(3rem + 1vw);
   }
   section.cta-23 .feature-heading {
     margin-top: 0;
@@ -4078,17 +4106,12 @@ section.cta-23 .material-icons {
 }
 
 section.cta-24 {
-  background: #F1F1F1;
   padding: 2rem 0;
 }
 
 section.cta-24 .flex-column {
   flex-direction: column-reverse;
   text-align: center;
-}
-
-section.cta-24 .cta-heading {
-  font-size: 2rem;
 }
 
 section.cta-24 .cta-feature-content {
@@ -4112,6 +4135,7 @@ section.cta-24 .cta-feature-image {
 }
 
 section.cta-24 .action-link {
+  display: inline-block;
   margin: 0 0 0 2rem;
   color: #333333;
 }
@@ -4130,7 +4154,6 @@ section.cta-24 .action-link {
 }
 
 section.cta-25 {
-  background: #F1F1F1;
   padding: 2rem 1rem 0;
 }
 
@@ -4139,7 +4162,6 @@ section.cta-25 .cta-feature-content {
 }
 
 section.cta-25 .cta-heading {
-  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -4183,28 +4205,25 @@ section.cta-25 .unfilled-button-fixed {
   }
 }
 
-section.cta-01 {
-  background: #F1F1F1;
+section.cta-26 {
   padding: 2rem 1rem;
 }
 
-section.cta-01 .flex-column {
+section.cta-26 .flex-column {
   max-width: 750px;
   margin: 0 auto;
   text-align: center;
 }
 
-section.cta-01 .cta-heading {
-  font-size: 2rem;
+section.cta-26 .cta-heading {
   margin: 0 0 2rem;
 }
 
-section.cta-01 .filled-button-dark-fixed {
+section.cta-26 .filled-button-dark-fixed {
   margin: 0 auto;
 }
 
 section.cta-27 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -4215,7 +4234,6 @@ section.cta-27 .flex-column {
 }
 
 section.cta-27 .cta-heading {
-  font-size: 2rem;
   margin: 0 0 2rem;
 }
 
@@ -4228,7 +4246,6 @@ section.cta-27 .filled-button-dark-fixed {
 }
 
 section.cta-28 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -4243,36 +4260,30 @@ section.cta-28 .tagline {
 }
 
 section.cta-28 .cta-heading {
-  font-size: 2rem;
   margin: 0 0 2rem;
 }
 
 section.cta-28 .filled-button-dark-fixed {
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
 }
 
 @media (min-width: 768px) {
-  section.cta-28 .cta-heading {
-    font-size: calc(2rem + 1vw);
-  }
   section.cta-28 .filled-button-dark-fixed {
     margin: 2rem auto 0;
   }
 }
 
 section.cta-29 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
 section.cta-29 .flex-column {
-  max-width: 750px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
 }
 
 section.cta-29 .cta-heading {
-  font-size: 2rem;
   margin: 0 0 2rem;
 }
 
@@ -4285,7 +4296,6 @@ section.cta-29 .filled-button-dark-fixed {
 }
 
 section.cta-30 {
-  background: #F1F1F1;
   padding: 2rem 1rem 0;
 }
 
@@ -4294,7 +4304,6 @@ section.cta-30 .cta-feature-content {
 }
 
 section.cta-30 .cta-heading {
-  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -4327,7 +4336,6 @@ section.cta-30 .unfilled-button-fixed {
 }
 
 section.cta-31 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -4340,7 +4348,6 @@ section.cta-31 .cta-content-wrapper {
 }
 
 section.cta-31 .cta-heading {
-  font-size: 1.5rem;
   margin: 0 0 1rem;
 }
 
@@ -5565,16 +5572,13 @@ section.content-with-photo-08 .flex-item a {
   margin: 2rem 0 0;
 }
 
-section.content-with-photo-08 .flex-item .m-font-size {
-  margin-top: 0;
-}
-
 section.content-with-photo-08 .flex-item .xm-font-size,
 section.content-with-photo-08 .flex-item .s-font-size {
   margin: 0;
 }
 
 section.content-with-photo-08 .flex-item .tagline {
+  display: block;
   margin: 2rem 0 1rem;
 }
 
@@ -6114,6 +6118,7 @@ section.content-with-photo-20 .flex-item .s-font-size {
 }
 
 section.content-with-photo-20 .flex-item .tagline {
+  display: block;
   margin: 2rem 0 1rem;
 }
 
@@ -6307,7 +6312,6 @@ section.content-with-photo-24 .flex-4-12 {
 }
 
 section.features-01 {
-  background: #F1F1F1;
   padding: 4rem 1rem;
 }
 
@@ -6331,7 +6335,6 @@ section.features-01 .material-icons {
 }
 
 section.features-02 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6368,7 +6371,6 @@ section.features-02 .material-icons {
 }
 
 section.features-03 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6405,7 +6407,6 @@ section.features-03 .action-link {
 }
 
 section.features-04 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6442,7 +6443,6 @@ section.features-04 .action-link {
 }
 
 section.features-05 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6486,7 +6486,6 @@ section.features-05 .action-link {
 }
 
 section.features-06 {
-  background: #F1F1F1;
   padding: 1rem;
 }
 
@@ -6523,7 +6522,6 @@ section.features-06 .material-icons {
 }
 
 section.features-07 {
-  background: #F1F1F1;
   padding: 1rem;
 }
 
@@ -6565,7 +6563,6 @@ section.features-07 .material-icons {
 }
 
 section.features-08 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6600,7 +6597,6 @@ section.features-08 .action-link {
 }
 
 section.features-09 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6635,7 +6631,6 @@ section.features-09 .action-link {
 }
 
 section.features-10 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6673,7 +6668,6 @@ section.features-10 span {
 }
 
 section.features-11 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6740,7 +6734,6 @@ section.features-11 .close li:before {
 }
 
 section.features-12 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6782,7 +6775,6 @@ section.features-12 .action-link {
 }
 
 section.features-13 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6827,7 +6819,6 @@ section.features-13 .xm-font-size {
 }
 
 section.features-14 {
-  background: #F1F1F1;
   padding: 4rem 1rem;
 }
 
@@ -6881,7 +6872,6 @@ section.features-14 .xm-font-size {
 }
 
 section.features-15 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6930,7 +6920,6 @@ section.features-15 .flex-item {
 }
 
 section.features-16 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -6973,7 +6962,6 @@ section.features-16 .active {
 }
 
 section.features-with-photo-01 {
-  background: #F1F1F1;
   padding: 1rem 0;
 }
 
@@ -7018,10 +7006,6 @@ section.features-with-photo-01 .material-icons {
   }
 }
 
-section.features-with-photo-03 {
-  background: #F1F1F1;
-}
-
 section.features-with-photo-03 .flex-column-to-row {
   margin: 0 auto;
 }
@@ -7057,10 +7041,6 @@ section.features-with-photo-03 span {
   section.features-with-photo-03 .flex-6-12:first-child {
     padding: 0 10vw;
   }
-}
-
-section.features-with-photo-04 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-04 .flex-column-to-row {
@@ -7120,10 +7100,6 @@ section.features-with-photo-04 .flex-row-to-column {
   }
 }
 
-section.features-with-photo-05 {
-  background: #F1F1F1;
-}
-
 section.features-with-photo-05 .flex-column-to-row {
   margin: 0 auto;
 }
@@ -7177,10 +7153,6 @@ section.features-with-photo-05 .flex-row {
     margin: 0 auto;
     max-width: 600px;
   }
-}
-
-section.features-with-photo-06 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-06 .flex-column-to-row {
@@ -7260,7 +7232,6 @@ section.features-with-photo-06 .icon-section {
 }
 
 section.features-with-photo-08 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -7297,10 +7268,6 @@ section.features-with-photo-08 .flex-row-to-column {
     flex-wrap: wrap;
     width: 50%;
   }
-}
-
-section.features-with-photo-09 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-09 .flex-column-to-row {
@@ -7361,10 +7328,6 @@ section.features-with-photo-09 .m-font-size {
   }
 }
 
-section.features-with-photo-10 {
-  background: #F1F1F1;
-}
-
 section.features-with-photo-10 .material-icons {
   font-size: 3rem;
 }
@@ -7392,10 +7355,6 @@ section.features-with-photo-10 .m-font-size {
     padding: 0;
     align-self: center;
   }
-}
-
-section.features-with-photo-12 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-12 .flex-column-to-row {
@@ -7433,10 +7392,6 @@ section.features-with-photo-12 span {
   section.features-with-photo-12 .flex-6-12:nth-child(2) {
     padding: 0 10vw;
   }
-}
-
-section.features-with-photo-13 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-13 .flex-column-to-row {
@@ -7494,10 +7449,6 @@ section.features-with-photo-13 .icon-section {
   }
 }
 
-section.features-with-photo-14 {
-  background: #F1F1F1;
-}
-
 section.features-with-photo-14 .flex-column-to-row {
   margin: 0 auto;
 }
@@ -7548,10 +7499,6 @@ section.features-with-photo-14 .flex-row {
     margin: 0 auto;
     max-width: 600px;
   }
-}
-
-section.features-with-photo-15 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-15 .flex-column-to-row {
@@ -7628,7 +7575,6 @@ section.features-with-photo-15 .icon-section {
 }
 
 section.features-with-photo-16 {
-  background: #F1F1F1;
   padding: 2rem 1rem;
 }
 
@@ -7666,10 +7612,6 @@ section.features-with-photo-16 .m-font-size {
     flex-wrap: wrap;
     width: 50%;
   }
-}
-
-section.features-with-photo-17 {
-  background: #F1F1F1;
 }
 
 section.features-with-photo-17 .flex-column-to-row {
@@ -7730,10 +7672,6 @@ section.features-with-photo-17 .m-font-size {
   }
 }
 
-section.features-with-photo-18 {
-  background: #F1F1F1;
-}
-
 section.features-with-photo-18 .material-icons {
   font-size: 3rem;
 }
@@ -7765,7 +7703,7 @@ section.features-with-photo-18 .m-font-size {
 }
 
 section.products-01 {
-  background: #F1F1F1;
+  color: #333333;
 }
 
 section.products-01 .flex-row {
@@ -7787,6 +7725,10 @@ section.products-01 .grid-item {
 
 section.products-01 .grid-item:last-child {
   display: none;
+}
+
+section.products-01 span {
+  display: block;
 }
 
 section.products-01 .grid-img {
@@ -7965,9 +7907,11 @@ section.products-06 .filled-button {
 
 section.products-07 {
   text-align: left;
+  color: #333333;
 }
 
 section.products-07 .flex-column-to-row span {
+  display: block;
   margin: .75rem 0;
 }
 
@@ -8009,6 +7953,7 @@ section.products-08 {
 }
 
 section.products-08 .flex-column-to-row span {
+  display: block;
   margin: .75rem 0;
 }
 
@@ -8047,6 +7992,7 @@ section.products-09 .flex-12-12 {
 }
 
 section.products-09 .flex-column-to-row span {
+  display: block;
   margin: .75rem 0;
 }
 
@@ -8085,6 +8031,7 @@ section.products-10 .flex-12-12 {
 
 section.products-10 .flex-column-to-row span {
   margin: .75rem 0;
+  display: block;
 }
 
 section.products-10 .flex-column-to-row .action-link {
@@ -8113,6 +8060,7 @@ section.products-11 {
 
 section.products-11 span {
   margin: 1rem 0;
+  display: block;
 }
 
 section.products-11 .flex-column {
@@ -8153,6 +8101,7 @@ section.products-12 {
 
 section.products-12 span {
   margin: 1rem 0;
+  display: block;
 }
 
 section.products-12 .flex-column {
@@ -8199,6 +8148,7 @@ section.products-13 {
 }
 
 section.products-13 span {
+  display: block;
   margin: 0 0 1rem;
 }
 
@@ -8230,6 +8180,7 @@ section.products-14 {
 }
 
 section.products-14 span {
+  display: block;
   margin: 0 0 1rem;
 }
 
@@ -8264,6 +8215,10 @@ section.products-14 .content-wrapper {
 section.products-16 {
   margin: 0 auto 1rem;
   max-width: 800px;
+}
+
+section.products-16 span {
+  display: block;
 }
 
 section.products-16 .flex-column-to-row {

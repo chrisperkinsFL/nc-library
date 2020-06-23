@@ -1,9 +1,5 @@
 section.cta-09{
-    background: $primary-color-3;
     padding: 2rem 0;
-    .cta-heading{
-      font-size: 2rem;
-    }
     .cta-heading{
       margin: 0 0 1rem;
     }
@@ -28,7 +24,6 @@ section.cta-09{
       border: 2px solid $primary-color-2;
     }
     .feature-heading{
-      font-size: 1.25rem;
       margin: 0 0 .5rem;
     }
     .line-break{
@@ -42,6 +37,7 @@ section.cta-09{
       width: 100%;
     }
     .action-link{
+      display: inline-block;
       margin: 0  0 0 2rem;
       color: $primary-color-2;
     } 

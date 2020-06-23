@@ -2,6 +2,9 @@ section.hero-05{
   background: $primary-color-1;
   color: $primary-color-2;
   overflow-y: hidden;
+    span{
+      display: block;
+    }
     .hero-content-wrapper{
       min-height: 100vh;
       height: 100%;

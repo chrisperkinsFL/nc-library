@@ -3,6 +3,9 @@ section.hero-11{
   .hero-content-wrapper{
     overflow-y: hidden;
     padding: 1rem;
+    span{
+      display: block;
+    }
       .tagline{
         text-transform: uppercase;
       }

@@ -90,6 +90,7 @@ nav{
       vertical-align: middle;
       font-size: 1.5rem;
       align-self: center;
+
     }
     .cart-item{
       position: absolute;
@@ -115,6 +116,7 @@ nav{
     }
     .shopping-cart-icon{
       font-size: 1rem;
+      line-height: 2rem;
     }
     .search-bar{
       display: none;
@@ -122,7 +124,7 @@ nav{
   
   @media (min-width: $tablet){
     input{
-      width: 18vw;
+      width: 100%;
     }
     .flex-4-12{
       max-width: 100%;
@@ -136,10 +138,11 @@ nav{
       height: 25px;
       vertical-align: middle;
     }
-    .search-bar{
-      margin: 0 0  0 20px;
-      height: 30px
+    .search-wrapper{
+      display: inline-block;
+      max-width: 100%;
     }
+    
     .nav-logo img{
       max-width: 100%;
       max-height: 100%;
@@ -224,6 +227,8 @@ nav{
     @media (min-width: $desktop){
       .search-bar{
         display: inline-block;
-      }    
+        margin: 0 0  0 20px;
+        height: 30px
+      }
     }
 }

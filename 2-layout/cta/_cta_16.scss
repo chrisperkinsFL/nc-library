@@ -1,11 +1,7 @@
 section.cta-16{
-    background: $primary-color-3;
     padding: 2rem 0;
     .flex-column-to-row{
       flex-direction: column-reverse;
-    }
-    .cta-heading{
-      font-size: 2rem;
     }
     .cta-heading{
       margin: 0 0 1rem;
@@ -31,7 +27,6 @@ section.cta-16{
       border: 2px solid $primary-color-2;
     }
     .feature-heading{
-      font-size: 1.25rem;
       margin: 0 0 .5rem;
     }
     .line-break{
@@ -45,6 +40,7 @@ section.cta-16{
       width: 100%;
     }
     .action-link{
+      display: inline-block;
       margin: 0  0 0 2rem;
       color: $primary-color-2;
     } 

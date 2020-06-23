@@ -1,7 +1,9 @@
 section.products-07{
   text-align: left;
+  color: $primary-color-2;
   .flex-column-to-row{
     span{
+      display: block;
       margin: .75rem 0;
     }
   }

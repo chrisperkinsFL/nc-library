@@ -1,6 +1,9 @@
 section.hero-16{
   background: $primary-color-3;
   color: $primary-color-2;
+  span{
+    display: block;
+  }
   .hero-content-wrapper{
     overflow-y: hidden;
       h1{
