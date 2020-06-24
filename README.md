@@ -34,3 +34,10 @@ I am almost done with all the designs in the 'content' folders. I will then be m
 - If you add the class of 'max-width' to 'class=flex-row' the max-width of the header content will be whatever the max-width class is set to. But, the background color on header will still stretch the entire width of the browser window.
 
 - the height of the nav is controlled by .flex-row (The default is 60px).  The margin-top of the #profile on desktop only must be the same as the .flex-row height of the nav because it is absolute positioned.  If the margin is not the same, the #profile will be misaligned.
+
+
+
+
+
+
+  
