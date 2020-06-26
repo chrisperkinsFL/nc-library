@@ -22,7 +22,7 @@ nav.menu-bottom{
       align-self: center;
     }
     .flex-1-12{
-      max-width: fit-content;
+      max-width: 35px;
       width: 100%;
     }
     .flex-4-12{
@@ -109,7 +109,7 @@ nav.menu-bottom{
     }
     .cart-icon{
       text-align: right;
-      margin: 0 .75rem 0 0;
+      margin: 0 20px 0 0;
     }
     .profile-image{
       text-align: right;
@@ -129,9 +129,6 @@ nav.menu-bottom{
     }
     .flex-4-12{
       max-width: 100%;
-    }
-    .flex-1-12 {
-     
     }
     .nav-logo{
       display: inline-block;

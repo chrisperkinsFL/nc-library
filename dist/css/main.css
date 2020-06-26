@@ -97,6 +97,13 @@ a {
   color: #F1F1F1;
 }
 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .max-width {
   margin: 0 auto;
   max-width: 1140px;
@@ -268,7 +275,7 @@ nav.menu-bottom .flex-1-12 {
 
 nav.menu-top .flex-1-12,
 nav.menu-bottom .flex-1-12 {
-  max-width: fit-content;
+  max-width: 35px;
   width: 100%;
 }
 
@@ -385,7 +392,7 @@ nav.menu-bottom .number {
 nav.menu-top .cart-icon,
 nav.menu-bottom .cart-icon {
   text-align: right;
-  margin: 0 .75rem 0 0;
+  margin: 0 20px 0 0;
 }
 
 nav.menu-top .profile-image,
@@ -4744,7 +4751,7 @@ section.content-11 {
 section.content-11 .flex-column-to-row,
 section.content-11 .flex-row {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1.75rem auto;
   place-content: space-between;
 }
 
@@ -4765,7 +4772,7 @@ section.content-11 .column-item {
   display: inline-block;
   vertical-align: middle;
   width: 90%;
-  margin: 1.25rem 1rem 0;
+  margin: 0 1rem 0;
 }
 
 section.content-11 .number {
@@ -4774,7 +4781,7 @@ section.content-11 .number {
   border-radius: 50%;
   font-size: 1.25rem;
   vertical-align: top;
-  margin: 1.25rem 0 0;
+  margin: 0;
   height: 30px;
   text-align: center;
 }

@@ -13,6 +13,13 @@ a{
   color: $primary-color-3;
 }
 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .max-width{
   margin: 0 auto;
   max-width: 1140px;

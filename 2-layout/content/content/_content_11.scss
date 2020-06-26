@@ -4,7 +4,7 @@ section.content-11{
       .flex-column-to-row,
       .flex-row{
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 1.75rem auto;
         place-content: space-between;
       }
       .flex-item-1,
@@ -21,7 +21,7 @@ section.content-11{
         display: inline-block;
         vertical-align: middle;
         width: 90%;
-        margin: 1.25rem 1rem 0;
+        margin: 0 1rem 0;
       }
       .number{
         border: 1px solid;
@@ -29,7 +29,7 @@ section.content-11{
         border-radius: 50%;
         font-size: 1.25rem;
         vertical-align: top;
-        margin: 1.25rem 0 0;
+        margin: 0;
         height: 30px;
         text-align: center;
       }
