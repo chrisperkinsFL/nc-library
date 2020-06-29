@@ -46,58 +46,224 @@ h6 {
   font-size: 1.25rem;
 }
 
-.xxs-font-size {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  display: block;
-}
-
 .xs-font-size {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 9rem;
+  line-height: 1.25rem;
   display: block;
 }
 
 .s-font-size {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
   display: block;
 }
 
 .m-font-size {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   display: block;
 }
 
 .xm-font-size {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   display: block;
 }
 
 .l-font-size {
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   display: block;
 }
 
 .xl-font-size {
-  font-size: 3.5rem;
-  line-height: 4.5rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
   display: block;
 }
 
-.xxl-font-size {
-  font-size: 4.5rem;
-  line-height: 5.5rem;
-  display: block;
+.f-size-10 {
+  font-size: 0.625rem;
 }
 
-.xxxl-font-size {
-  font-size: 5.5rem;
-  line-height: 6.5rem;
-  display: block;
+.f-size-12 {
+  font-size: 0.75rem;
+}
+
+.f-size-14 {
+  font-size: 0.875rem;
+}
+
+.f-size-16 {
+  font-size: 1rem;
+}
+
+.f-size-18 {
+  font-size: 1.125rem;
+}
+
+.f-size-20 {
+  font-size: 1.25rem;
+}
+
+.f-size-22 {
+  font-size: 1.375rem;
+}
+
+.f-size-24 {
+  font-size: 1.5rem;
+}
+
+.f-size-26 {
+  font-size: 1.625rem;
+}
+
+.f-size-28 {
+  font-size: 1.75rem;
+}
+
+.f-size-30 {
+  font-size: 1.875rem;
+}
+
+.f-size-32 {
+  font-size: 2rem;
+}
+
+.f-size-34 {
+  font-size: 2.125rem;
+}
+
+.f-size-36 {
+  font-size: 2.25rem;
+}
+
+.f-size-38 {
+  font-size: 2.375rem;
+}
+
+.f-size-40 {
+  font-size: 2.5rem;
+}
+
+.f-size-42 {
+  font-size: 2.625rem;
+}
+
+.f-size-44 {
+  font-size: 2.75rem;
+}
+
+.f-size-46 {
+  font-size: 2.875rem;
+}
+
+.f-size-48 {
+  font-size: 3rem;
+}
+
+.f-size-50 {
+  font-size: 3.125rem;
+}
+
+.f-size-52 {
+  font-size: 3.25rem;
+}
+
+.f-size-54 {
+  font-size: 3.375rem;
+}
+
+.lh-10 {
+  line-height: 0.625rem;
+}
+
+.lh-12 {
+  line-height: 0.75rem;
+}
+
+.lh-14 {
+  line-height: 0.875rem;
+}
+
+.lh-16 {
+  line-height: 1rem;
+}
+
+.lh-18 {
+  line-height: 1.125rem;
+}
+
+.lh-20 {
+  line-height: 1.25rem;
+}
+
+.lh-22 {
+  line-height: 1.375rem;
+}
+
+.lh-24 {
+  line-height: 1.5rem;
+}
+
+.lh-26 {
+  line-height: 1.625rem;
+}
+
+.lh-28 {
+  line-height: 1.75rem;
+}
+
+.lh-30 {
+  line-height: 1.875rem;
+}
+
+.lh-32 {
+  line-height: 2rem;
+}
+
+.lh-34 {
+  line-height: 2.125rem;
+}
+
+.lh-36 {
+  line-height: 2.25rem;
+}
+
+.lh-38 {
+  line-height: 2.375rem;
+}
+
+.lh-40 {
+  line-height: 2.5rem;
+}
+
+.lh-42 {
+  line-height: 2.625rem;
+}
+
+.lh-44 {
+  line-height: 2.75rem;
+}
+
+.lh-46 {
+  line-height: 2.875rem;
+}
+
+.lh-48 {
+  line-height: 3rem;
+}
+
+.lh-50 {
+  line-height: 3.125rem;
+}
+
+.lh-52 {
+  line-height: 3.25rem;
+}
+
+.lh-54 {
+  line-height: 3.375rem;
 }
 
 .max-width-600 {
@@ -146,10 +312,6 @@ h6 {
 
 .max-width-1140 {
   max-width: 1140px;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
@@ -6473,17 +6635,18 @@ section.features-02 .flex-column {
 
 section.features-02 .heading-text {
   font-weight: bold;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 section.features-02 .section-text {
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
 }
 
 section.features-02 span,
 section.features-02 .material-icons {
   display: block;
   text-align: center;
+  margin-bottom: 0.625rem;
 }
 
 section.features-02 .flex-column-to-row {
