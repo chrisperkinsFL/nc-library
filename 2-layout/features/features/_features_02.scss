@@ -2,26 +2,30 @@ section.features-02{
   padding: 2rem 1rem;
   .flex-column{
     margin: 0 auto;
-    max-width: 1000px;
+  }
+  .heading-text{
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+  }
+  .section-text{
+    margin: 0 auto 4rem;
   }
   span,
   .material-icons{
     display: block;
     text-align: center;
   }
-  span{
-    margin: 2rem 0 0;
-  }
+
   .flex-column-to-row{
-    margin: 2rem 0;
-  }
-  .material-icons{
-    font-size: 4rem;
+    margin: 0 auto;
+    span{
+      margin: 1rem 0;
+    }
   }
 
   @media (min-width: $tablet){   
     .flex-column-to-row{
-      margin: 4rem 0 2rem;
+      margin: 0 auto;
       span{
         margin: 0 1.5rem;
       }

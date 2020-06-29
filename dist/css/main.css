@@ -46,40 +46,110 @@ h6 {
   font-size: 1.25rem;
 }
 
+.xxs-font-size {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  display: block;
+}
+
 .xs-font-size {
-  font-size: .9rem;
-  line-height: 1.25rem;
-  display: block;
-}
-
-.s-font-size {
-  font-size: 1.1rem;
-  line-height: 1.6rem;
-  display: block;
-}
-
-.m-font-size {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  display: block;
-}
-
-.xm-font-size {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   display: block;
 }
 
-.l-font-size {
+.s-font-size {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  display: block;
+}
+
+.m-font-size {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  display: block;
+}
+
+.xm-font-size {
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
+  display: block;
+}
+
+.l-font-size {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
   display: block;
 }
 
 .xl-font-size {
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
   display: block;
+}
+
+.xxl-font-size {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  display: block;
+}
+
+.xxxl-font-size {
+  font-size: 5.5rem;
+  line-height: 6.5rem;
+  display: block;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-650 {
+  max-width: 650px;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.max-width-750 {
+  max-width: 750px;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.max-width-850 {
+  max-width: 850px;
+}
+
+.max-width-900 {
+  max-width: 900px;
+}
+
+.max-width-950 {
+  max-width: 950px;
+}
+
+.max-width-1000 {
+  max-width: 1000px;
+}
+
+.max-width-1050 {
+  max-width: 1050px;
+}
+
+.max-width-1100 {
+  max-width: 1100px;
+}
+
+.max-width-1140 {
+  max-width: 1140px;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -6399,7 +6469,15 @@ section.features-02 {
 
 section.features-02 .flex-column {
   margin: 0 auto;
-  max-width: 1000px;
+}
+
+section.features-02 .heading-text {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+section.features-02 .section-text {
+  margin: 0 auto 4rem;
 }
 
 section.features-02 span,
@@ -6408,21 +6486,17 @@ section.features-02 .material-icons {
   text-align: center;
 }
 
-section.features-02 span {
-  margin: 2rem 0 0;
-}
-
 section.features-02 .flex-column-to-row {
-  margin: 2rem 0;
+  margin: 0 auto;
 }
 
-section.features-02 .material-icons {
-  font-size: 4rem;
+section.features-02 .flex-column-to-row span {
+  margin: 1rem 0;
 }
 
 @media (min-width: 768px) {
   section.features-02 .flex-column-to-row {
-    margin: 4rem 0 2rem;
+    margin: 0 auto;
   }
   section.features-02 .flex-column-to-row span {
     margin: 0 1.5rem;

@@ -1,3 +1,7 @@
+html{
+  font-size:62.5%;
+}
+
 body{
   background-color: $primary-color-3;
   font-family: $primary-font;
@@ -30,8 +34,6 @@ button:focus {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
 }
-
-
 
 .filled-button{
   display: inline-block;
