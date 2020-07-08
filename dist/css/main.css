@@ -358,6 +358,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
 .max-width-600 {
   max-width: 600px;
 }
@@ -478,7 +482,7 @@ input {
   border: 0;
   padding: 1rem;
   margin: .25rem 0;
-  width: 300px;
+  max-width: 300px;
 }
 
 .action-link {
@@ -3440,92 +3444,6 @@ section.grid-enhanced-10 .flex-child-block {
   section.grid-enhanced-10 .flex-child-block {
     flex-basis: calc(50% - 20px);
     margin: 10px;
-  }
-}
-
-section.home-blog {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-section.home-blog span {
-  display: block;
-}
-
-section.home-blog .title {
-  margin: 20px 0;
-}
-
-section.home-blog .inner-wrapper {
-  padding: 0 1rem;
-}
-
-section.home-blog .tagline a {
-  letter-spacing: .1rem;
-  color: #333333;
-}
-
-section.home-blog p {
-  color: #F1F1F1;
-}
-
-section.home-blog .flex-row {
-  flex-wrap: wrap;
-}
-
-section.home-blog .flex-row .flex-row {
-  flex-wrap: nowrap;
-}
-
-section.home-blog article {
-  height: 290px;
-}
-
-section.home-blog article .inner-wrapper {
-  align-self: center;
-  margin: 0 auto;
-}
-
-section.home-blog .flex-item {
-  height: 100%;
-  min-height: 290px;
-  width: calc(50% - 15px);
-  background: #333333;
-}
-
-section.home-blog .flex-item:first-child {
-  margin-right: 15px;
-}
-
-section.home-blog .flex-item:nth-child(2) {
-  margin-left: 15px;
-}
-
-section.home-blog .flex-item:nth-child(3) {
-  margin: 30px 0;
-  min-height: 580px;
-  width: 100%;
-}
-
-section.home-blog .heading {
-  padding: 0 1rem;
-  margin: 20px auto 45px;
-  font-weight: 700;
-}
-
-@media (min-width: 768px) {
-  section.home-blog .heading {
-    font-size: 2.8rem;
-    width: 60%;
-  }
-  section.home-blog .inner-wrapper {
-    padding: 0 20%;
-  }
-  section.home-blog .title {
-    font-size: 1.5625rem;
-  }
-  section.home-blog .large .title {
-    font-size: 2.8125rem;
   }
 }
 
@@ -8776,6 +8694,138 @@ footer.footer-main .flex-item {
 @media (min-width: 768px) {
   footer.footer-main .flex-item {
     margin: 0;
+  }
+}
+
+section.home-blog {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+section.home-blog span {
+  display: block;
+}
+
+section.home-blog .title {
+  margin: 20px 0;
+}
+
+section.home-blog .inner-wrapper {
+  padding: 0 1rem;
+}
+
+section.home-blog .tagline a {
+  letter-spacing: .1rem;
+  color: #333333;
+}
+
+section.home-blog p {
+  color: #F1F1F1;
+}
+
+section.home-blog .flex-row {
+  flex-wrap: wrap;
+}
+
+section.home-blog .flex-row .flex-row {
+  flex-wrap: nowrap;
+}
+
+section.home-blog article {
+  height: 290px;
+}
+
+section.home-blog article .inner-wrapper {
+  align-self: center;
+  margin: 0 auto;
+}
+
+section.home-blog .flex-item {
+  height: 100%;
+  min-height: 290px;
+  width: calc(50% - 15px);
+  background: #333333;
+}
+
+section.home-blog .flex-item:first-child {
+  margin-right: 15px;
+}
+
+section.home-blog .flex-item:nth-child(2) {
+  margin-left: 15px;
+}
+
+section.home-blog .flex-item:nth-child(3) {
+  margin: 30px 0;
+  min-height: 580px;
+  width: 100%;
+}
+
+section.home-blog .heading {
+  padding: 0 1rem;
+  margin: 20px auto 45px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  section.home-blog .heading {
+    font-size: 2.8rem;
+    width: 60%;
+  }
+  section.home-blog .inner-wrapper {
+    padding: 0 20%;
+  }
+  section.home-blog .title {
+    font-size: 1.5625rem;
+  }
+  section.home-blog .large .title {
+    font-size: 2.8125rem;
+  }
+}
+
+section.global-newsletter {
+  text-align: center;
+  padding: 3rem 20px;
+  background: #333333;
+  color: #F1F1F1;
+}
+
+section.global-newsletter .form-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+section.global-newsletter p {
+  margin: .75rem auto 1.5rem;
+  color: #FFFFFF70;
+}
+
+section.global-newsletter input {
+  margin: .75rem 0 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+section.global-newsletter button {
+  margin: .75rem 0 0;
+  background: #EA5948;
+  color: #F1F1F1;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  section.global-newsletter .flex-item {
+    width: calc(33.33333333333% - 20px);
+  }
+  section.global-newsletter p {
+    width: 40%;
+  }
+  section.global-newsletter button,
+  section.global-newsletter input {
+    padding: 0.625rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+section.global-newsletter{
+  text-align: center;
+  padding: 3rem 20px;
+  background: $primary-color-2;
+  color: $primary-color-3;
+  .form-wrapper{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+  }
+  p{
+    margin: .75rem auto 1.5rem;
+    color: $gray;
+  }
+  input{
+    margin: .75rem 0 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  button{
+    margin: .75rem 0 0;
+    background: $primary-color-1;
+    color: $primary-color-3;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+  }
+  @media (min-width: $tablet){
+    .flex-item{
+      width: calc(33.33333333333% - 20px);
+    }
+    p{
+      width: 40%;
+    }
+    button,
+    input{
+      padding: 0.625rem;
+    }
+  }
+    
+  @media (min-width: $desktop){
+          
+  }
+  @media (min-width: $oversized-desktop){
+    
+  }
+}

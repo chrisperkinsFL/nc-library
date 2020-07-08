@@ -66,12 +66,11 @@ button:focus {
   height: fit-content;
 }
 
-
 input{
   border: 0;
   padding: 1rem;
   margin: .25rem 0;
-  width: 300px;
+  max-width: 300px;
 }
 
 .action-link{
