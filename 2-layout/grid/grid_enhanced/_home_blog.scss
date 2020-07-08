@@ -21,7 +21,7 @@ section.home-blog{
       flex-wrap: wrap;
       .flex-row{
         flex-wrap: nowrap;
-        }
+      }
     }
     article{
       height: 290px;
@@ -47,24 +47,11 @@ section.home-blog{
           width: 100%;
         }
     }
-    .grid-heading{
-      margin: 2rem 1rem;
-      font-size: 2rem;
-      text-align: center;
-    }
     .heading{
       padding: 0 1rem;
       margin: 20px auto 45px;
       font-weight: $bold;
     }
-    .action-link{
-      margin: 1rem 0 0;
-      font-size: 1.25rem;
-      display: block;
-      text-align: center;
-      color: $primary-color-2;
-    }
-  
   
   @media (min-width: $tablet){
     .heading{
