@@ -8818,7 +8818,7 @@ section.global-newsletter button {
 
 @media (min-width: 768px) {
   section.global-newsletter .flex-item {
-    width: calc(33.33333333333% - 20px);
+    width: calc(33.33333333333% - 12px);
   }
   section.global-newsletter p {
     width: 40%;
